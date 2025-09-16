@@ -1,23 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus.Frame Team Project</title>
+</head>
 
-    <load src="./partials/footer.html" />
+<body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar">
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#">Focus.<span>Frame</span></a>
+                </div>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+                <!-- Menü -->
+                <ul class="nav-links">
+                    <li><a href="#about">ABOUT US</a></li>
+                    <li><a href="#courses">OUR COURSES</a></li>
+                    <li><a href="#mentors">OUR MENTORS</a></li>
+                    <li><a href="#reviews">REVIEWS</a></li>
+                    <li><a href="#contacts">CONTACTS</a></li>
+                </ul>
+
+                <!-- Buton -->
+                <div class="signup-button">
+                    <a href="#signup" class="btn">SIGN UP</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>
+                        Discover the magic of <span class="highlight">photography</span> in our school
+                    </h1>
+                    <p class="hero-subtitle">
+                        Our photography school offers an unforgettable journey, where you can learn
+                        the basics of composition, master technical skills, translate your unique ideas.
+                    </p>
+
+                    <div class="hero-stats">
+                        <!-- Öğrenciler kısmı -->
+                        <div class="students">
+                            <img src="student1.jpg" alt="student photo" class="student-img">
+                            <img src="student2.jpg" alt="student photo" class="student-img">
+                            <img src="student3.jpg" alt="student photo" class="student-img">
+                            <a href="#rewievs">Our happy students</a>
+                        </div>
+
+                        <!-- Reviews kısmı -->
+                        <div class="reviews">
+                            <span class="icon"></span>
+                            <span>Reviews<br><strong>+1500</strong></span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sağ taraftaki ana görsel -->
+                <div class="hero-image">
+                    <img src="photographer.png" alt="Photographer with camera">
+                </div>
+            </section>
+            <section class="adverisement">
+                <div class="ad-header">
+                    <h2>Master <span>your photography</span> skills with us!</h2>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
 </html>
