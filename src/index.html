@@ -9,10 +9,108 @@
   </head>
   <body>
     <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/our_mentors.html" />
+      <div class="container">
+        <section class="section our_mentors">
+          <h2 class="our_mentors_title section_title">Our Mentors</h2>
+          <ul class="our_mentors_cards">
+            <li class="our_mentor_card">
+              <img src="/src/img/Emilia-Smith.jpg" alt="Emilia-Smith" />
+              <h4>Emilia Smith</h4>
+              <p>1.5 years of experience</p>
+            </li>
+            <li class="our_mentor_card">
+              <img src="/src/img/Alex-Lebedev.jpg" alt="Alex-Lebedev" />
+              <h4>Alex Lebedev</h4>
+              <p>3.5 years of experience</p>
+            </li>
+            <li class="our_mentor_card">
+              <img src="/src/img/Mia-Dubrovska.jpg" alt="Mia-Dubrovska" />
+              <h4>Mia Dubrovska</h4>
+              <p>2.0 years of experience</p>
+            </li>
+            <li class="our_mentor_card">
+              <img src="/src/img/Eliot-Kovalev.jpg" alt="Eliot-Kovalev" />
+              <h4>Eliot Kovalev</h4>
+              <p>4.0 years of experience</p>
+            </li>
+          </ul>
+        </section>
+        <section class="section reviews">
+          <h2 class="review_title">Reviews</h2>
+          <ul class="review_list">
+            <li class="review_list_item">
+              <img src="/src/img/Abraham-Baker.jpg" alt="Abraham-Baker" />
+              <h3>Abraham Baker</h3>
+              <p>Student</p>
+              <div class="review_stars">
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+              </div>
+              <p class="review_description">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <section class="section sign_up">
+          <h2 class="sign_up_title">Sign Up</h2>
+          <h6>
+            Please use the form below to contact us. Enter your name, email, and
+            message and we'll get back to you shortly.
+          </h6>
+          <form class="sign_up_form">
+            <label>
+              <input
+                type="text"
+                pattern="[A-Za-z]"
+                id="sign_up_name"
+                name="name"
+                required
+              />
+            </label>
+            <label>
+              <input
+                type="email"
+                pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                id="sign_up_mail"
+                name="email"
+                required
+              />
+            </label>
+            <label>
+              <textarea
+                id="sign_up_message"
+                name="message"
+                placeholder="Message"
+                rows="5"
+                required
+              ></textarea>
+            </label>
+          </form>
+          <button class="sign_up_button" type="submit">Send</button>
+          <p class="sign_up_form_permission">
+            By clicking on “Send” button, you agree to our Privacy Policy, and
+            allow Promodo to use this information for marketing purposes.
+          </p>
+        </section>
+      </div>
     </main>
-
-
   </body>
 </html>
