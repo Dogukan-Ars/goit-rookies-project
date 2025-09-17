@@ -9,54 +9,29 @@
   </head>
   <body>
     <div class="container">
-      <header class="header">
-        <nav class="navbar">
+      <header class="section header-section">
+        <nav class="navbar-section">
           <!-- Logo -->
-          <div class="logo">
-            <a href="#">Focus.<span>Frame</span></a>
+          <div class="navbar-logo">
+            <a id="nav-logo" href="#">Focus.<span>Frame</span></a>
           </div>
 
           <!-- Menü -->
-          <ul class="nav-links">
-            <li><a href="#about">ABOUT US</a></li>
-            <li><a href="#courses">OUR COURSES</a></li>
-            <li><a href="#mentors">OUR MENTORS</a></li>
-            <li><a href="#reviews">REVIEWS</a></li>
-            <li><a href="#contacts">CONTACTS</a></li>
+          <ul class="navbar-links">
+            <li class="navbar-link"><a href="#about">ABOUT US</a></li>
+            <li class="navbar-link"><a href="#courses">OUR COURSES</a></li>
+            <li class="navbar-link"><a href="#mentors">OUR MENTORS</a></li>
+            <li class="navbar-link"><a href="#reviews">REVIEWS</a></li>
+            <li class="navbar-link"><a href="#contacts">CONTACTS</a></li>
           </ul>
 
           <!-- Buton -->
-          <div class="signup-button">
-            <a href="#signup" class="btn">SIGN UP</a>
+          <div class="sign-up-button">
+            <button type="submit" class="btn">SIGN UP</button>
           </div>
         </nav>
       </header>
-    </div>
-    <main>
-      <div class="container">
-        <header class="section header-section">
-          <nav class="navbar-section">
-            <!-- Logo -->
-            <div class="navbar-logo">
-              <a id="nav-logo" href="#">Focus.<span>Frame</span></a>
-            </div>
-
-            <!-- Menü -->
-            <ul class="navbar-links">
-              <li class="navbar-link"><a href="#about">ABOUT US</a></li>
-              <li class="navbar-link"><a href="#courses">OUR COURSES</a></li>
-              <li class="navbar-link"><a href="#mentors">OUR MENTORS</a></li>
-              <li class="navbar-link"><a href="#reviews">REVIEWS</a></li>
-              <li class="navbar-link"><a href="#contacts">CONTACTS</a></li>
-            </ul>
-
-            <!-- Buton -->
-            <div class="sign-up-button">
-              <button type="submit" class="btn">SIGN UP</button>
-            </div>
-          </nav>
-        </header>
-        <>
+      <main>
         <section class="section hero-section">
           <div class="hero-content">
             <h1>
@@ -111,7 +86,10 @@
         </section>
 
         <section class="section our-mentors">
+          <!-- Our Mentors Başlık -->
           <h2 class="our-mentors-title section_title">Our Mentors</h2>
+
+          <!-- Our Mentors Card Yapısı -->
           <ul class="our-mentors-cards">
             <li class="our-mentor-card">
               <img src="/src/img/Emilia-Smith.jpg" alt="Emilia-Smith" />
@@ -137,7 +115,10 @@
         </section>
 
         <section class="section reviews-section">
+          <!-- Reviews Başlık -->
           <h2 class="review-title">Reviews</h2>
+
+          <!-- Reviews Card Yapısı -->
           <ul class="review-list">
             <li class="review-list-item">
               <img src="/src/img/Abraham-Baker.jpg" alt="Abraham-Baker" />
@@ -145,19 +126,9 @@
               <p>Student</p>
               <div class="review-stars">
                 <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
+                  <use>
+                    <!-- Yıldız iconları yer alacak -->
+                  </use>
                 </svg>
               </div>
               <p class="review-description">
@@ -172,11 +143,16 @@
         </section>
 
         <section class="section sign-up-section">
+          <!-- Sign Up Başlık -->
           <h2 class="sign-up-title">Sign Up</h2>
+
+          <!-- Sign Up Alt Başlık -->
           <h6>
             Please use the form below to contact us. Enter your name, email, and
             message and we'll get back to you shortly.
           </h6>
+
+          <!-- Sign Up Form Yapısı -->
           <form class="sign-up-form">
             <label>
               <input
@@ -212,89 +188,90 @@
             allow Promodo to use this information for marketing purposes.
           </p>
         </section>
-      </div>
-    </main>
-    <!-- Footer -->
-    <footer class="section footer-section">
-      <div class="container footer-content">
-        <!-- Logo -->
-        <div class="footer-brand">
-          <a href="/" class="footer-logo">
-            <!-- <img src="logo.png" alt="Şirket Logosu"> -->
-            <span class="footer-logo-text">LOGO</span>
-          </a>
-        </div>
+      </main>
 
-        <!-- İrtibat bilgisi -->
-        <address class="footer-contacts">
-          <a href="tel:+380665438912">+38 066 543 8912</a>
-          <a href="">1678 S. Pionner Road Salt Lake City UT 84104</a>
-        </address>
-
-        <div class="footer-navbar">
-          <!-- Sosyal Medya -->
-          <div class="footer-social">
-            <ul class="footer-social-lists">
-              <li class="footer-social-list">
-                <a
-                  href="https://www.instagram.com/goit.turkiye/"
-                  target="_blank"
-                  >INSTAGRAM</a
-                >
-              </li>
-              <li class="footer-social-list">
-                <a href="https://m.youtube.com/@GoITTurkey" target="_blank"
-                  >YOUTUBE</a
-                >
-              </li>
-              <li class="footer-social-list">
-                <a
-                  href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
-                  target="_blank"
-                  >FACEBOOK</a
-                >
-              </li>
-            </ul>
+      <!-- Footer -->
+      <footer class="section footer-section">
+        <div class="container footer-content">
+          <!-- Logo -->
+          <div class="footer-brand">
+            <a href="/" class="footer-logo">
+              <!-- <img src="logo.png" alt="Şirket Logosu"> -->
+              <span class="footer-logo-text">LOGO</span>
+            </a>
           </div>
 
-          <!-- Site Bağlantı Listesi -->
-          <nav class="footer-nav">
-            <ul class="footer-nav-links">
-              <li class="footer-nav-link"><a href="">ABOUT US</a></li>
-              <li class="footer-nav-link"><a href="">OUR COURSES</a></li>
-              <li class="footer-nav-link"><a href="">OUR MENTORS</a></li>
-              <li class="footer-nav-link"><a href="">REVIEWS</a></li>
-              <li class="footer-nav-link"><a href="">CONTACTS</a></li>
-            </ul>
-          </nav>
-        </div>
+          <!-- İrtibat bilgisi -->
+          <address class="footer-contacts">
+            <a href="tel:+380665438912">+38 066 543 8912</a>
+            <a href="">1678 S. Pionner Road Salt Lake City UT 84104</a>
+          </address>
 
-        <!-- Form -->
-        <form class="footer-form">
-          <label>
-            <input
-              id="footer-email"
-              type="email"
-              name="email"
-              placeholder="Enter your email"
-              required
-            />
-          </label>
-        </form>
-        <button class="footer-form-button" type="submit">Go</button>
+          <div class="footer-navbar">
+            <!-- Sosyal Medya -->
+            <div class="footer-social">
+              <ul class="footer-social-lists">
+                <li class="footer-social-list">
+                  <a
+                    href="https://www.instagram.com/goit.turkiye/"
+                    target="_blank"
+                    >INSTAGRAM</a
+                  >
+                </li>
+                <li class="footer-social-list">
+                  <a href="https://m.youtube.com/@GoITTurkey" target="_blank"
+                    >YOUTUBE</a
+                  >
+                </li>
+                <li class="footer-social-list">
+                  <a
+                    href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                    target="_blank"
+                    >FACEBOOK</a
+                  >
+                </li>
+              </ul>
+            </div>
 
-        <div class="footer-bottom">
-          <div class="footer-left">
-            <p>Privacy Policy</p>
-            <p>Public Offering Agreement</p>
+            <!-- Site Bağlantı Listesi -->
+            <nav class="footer-nav">
+              <ul class="footer-nav-links">
+                <li class="footer-nav-link"><a href="">ABOUT US</a></li>
+                <li class="footer-nav-link"><a href="">OUR COURSES</a></li>
+                <li class="footer-nav-link"><a href="">OUR MENTORS</a></li>
+                <li class="footer-nav-link"><a href="">REVIEWS</a></li>
+                <li class="footer-nav-link"><a href="">CONTACTS</a></li>
+              </ul>
+            </nav>
           </div>
 
-          <div class="footer-right">
-            <p>2024 Focus Frame</p>
-            <p>© All rights reserved</p>
+          <!-- Form -->
+          <form class="footer-form">
+            <label>
+              <input
+                id="footer-email"
+                type="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+          </form>
+          <button class="footer-form-button" type="submit">Go</button>
+
+          <div class="footer-bottom">
+            <div class="footer-left">
+              <p>Privacy Policy</p>
+              <p>Public Offering Agreement</p>
+            </div>
+
+            <div class="footer-right">
+              <p>2024 Focus Frame</p>
+              <p>© All rights reserved</p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
