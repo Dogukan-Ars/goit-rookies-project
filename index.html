@@ -1,48 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoIT Rookies</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <main>
-      <div class="container">
-        <section class="section our_mentors">
-          <h2 class="our_mentors_title section_title">Our Mentors</h2>
-          <ul class="our_mentors_cards">
-            <li class="our_mentor_card">
+
+<body>
+    <div class="container">
+      <header class="section header-section">
+        <nav class="navbar-section">
+            <!-- Logo -->
+            <div class="navbar-logo">
+                <a id="nav-logo" href="#">Focus.<span>Frame</span></a>
+            </div>
+
+            <!-- Menü -->
+            <ul class="navbar-links">
+                <li class="navbar-link"><a href="#about">ABOUT US</a></li>
+                <li class="navbar-link"><a href="#courses">OUR COURSES</a></li>
+                <li class="navbar-link"><a href="#mentors">OUR MENTORS</a></li>
+                <li class="navbar-link"><a href="#reviews">REVIEWS</a></li>
+                <li class="navbar-link"><a href="#contacts">CONTACTS</a></li>
+            </ul>
+
+            <!-- Buton -->
+            <div class="sign-up-button">
+                <button type="submit" class="btn">SIGN UP</button>
+            </div>
+        </nav>
+      </header>
+      <main>
+        <section class="section hero-section">
+            <div class="hero-content">
+                <h1>
+                    Discover the magic of <span class="highlight">photography</span> in our school
+                </h1>
+                <p class="hero-subtitle">
+                    Our photography school offers an unforgettable journey, where you can learn
+                    the basics of composition, master technical skills, translate your unique ideas.
+                </p>
+
+                <div class="hero-stats">
+                    <!-- Öğrenciler kısmı -->
+                    <div class="hero-students">
+                        <img src="student1.jpg" alt="student photo" class="student-img">
+                        <img src="student2.jpg" alt="student photo" class="student-img">
+                        <img src="student3.jpg" alt="student photo" class="student-img">
+                        <a href="#rewievs">Our happy students</a>
+                    </div>
+
+                    <!-- Reviews kısmı -->
+                    <div class="hero-reviews">
+                        <span class="icon"></span>
+                        <span>Reviews<br><strong>+1500</strong></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sağ taraftaki ana görsel -->
+            <div class="hero-image">
+                <img src="photographer.png" alt="Photographer with camera">
+            </div>
+        </section>
+          
+        <section class="section advertisement-section">
+            <div class="advertisement">
+                <h2>Master <span>your photography</span> skills with us!</h2>
+            </div>
+        </section>
+          
+        <section class="section our-mentors">
+          <h2 class="our-mentors-title section_title">Our Mentors</h2>
+          <ul class="our-mentors-cards">
+            <li class="our-mentor-card">
               <img src="/src/img/Emilia-Smith.jpg" alt="Emilia-Smith" />
               <h4>Emilia Smith</h4>
               <p>1.5 years of experience</p>
             </li>
-            <li class="our_mentor_card">
+            <li class="our-mentor-card">
               <img src="/src/img/Alex-Lebedev.jpg" alt="Alex-Lebedev" />
               <h4>Alex Lebedev</h4>
               <p>3.5 years of experience</p>
             </li>
-            <li class="our_mentor_card">
+            <li class="our-mentor-card">
               <img src="/src/img/Mia-Dubrovska.jpg" alt="Mia-Dubrovska" />
               <h4>Mia Dubrovska</h4>
               <p>2.0 years of experience</p>
             </li>
-            <li class="our_mentor_card">
+            <li class="our-mentor-card">
               <img src="/src/img/Eliot-Kovalev.jpg" alt="Eliot-Kovalev" />
               <h4>Eliot Kovalev</h4>
               <p>4.0 years of experience</p>
             </li>
           </ul>
         </section>
-        <section class="section reviews">
-          <h2 class="review_title">Reviews</h2>
-          <ul class="review_list">
-            <li class="review_list_item">
+          
+        <section class="section reviews-section">
+          <h2 class="review-title">Reviews</h2>
+          <ul class="review-list">
+            <li class="review-list-item">
               <img src="/src/img/Abraham-Baker.jpg" alt="Abraham-Baker" />
               <h3>Abraham Baker</h3>
               <p>Student</p>
-              <div class="review_stars">
+              <div class="review-stars">
                 <svg>
                   <use></use>
                 </svg>
@@ -59,7 +123,7 @@
                   <use></use>
                 </svg>
               </div>
-              <p class="review_description">
+              <p class="review-description">
                 I am very pleased that I decided to enroll in photography
                 school. The teachers turned out to be very talented and
                 experienced professionals who share their knowledge and are
@@ -69,18 +133,19 @@
             </li>
           </ul>
         </section>
-        <section class="section sign_up">
-          <h2 class="sign_up_title">Sign Up</h2>
+          
+        <section class="section sign-up-section">
+          <h2 class="sign-up-title">Sign Up</h2>
           <h6>
             Please use the form below to contact us. Enter your name, email, and
             message and we'll get back to you shortly.
           </h6>
-          <form class="sign_up_form">
+          <form class="sign-up-form">
             <label>
               <input
                 type="text"
                 pattern="[A-Za-z]"
-                id="sign_up_name"
+                id="sign-up-name"
                 name="name"
                 required
               />
@@ -89,14 +154,14 @@
               <input
                 type="email"
                 pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
-                id="sign_up_mail"
+                id="sign-up-mail"
                 name="email"
                 required
               />
             </label>
             <label>
               <textarea
-                id="sign_up_message"
+                id="sign-up-message"
                 name="message"
                 placeholder="Message"
                 rows="5"
@@ -104,12 +169,13 @@
               ></textarea>
             </label>
           </form>
-          <button class="sign_up_button" type="submit">Send</button>
-          <p class="sign_up_form_permission">
+          <button class="sign-up-button" type="submit">Send</button>
+          <p class="sign-up-form-permission">
             By clicking on “Send” button, you agree to our Privacy Policy, and
             allow Promodo to use this information for marketing purposes.
           </p>
         </section>
+          
       </div>
     </main>
   </body>
