@@ -8,69 +8,41 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <load
+      src="partials/header.html"
+      highlight-act="active"
+    />
     <main>
       <div class="container">
         <section class="section our_mentors">
           <h2 class="our_mentors_title section_title">Our Mentors</h2>
           <ul class="our_mentors_cards">
             <li class="our_mentor_card">
-              <img src="/src/img/Emilia-Smith.jpg" alt="Emilia-Smith" />
-              <h4>Emilia Smith</h4>
+              <img src="img/Emilia-Smith.jpg" alt="Emilia-Smith" />
+              <h3>Emilia Smith</h3>
               <p>1.5 years of experience</p>
             </li>
             <li class="our_mentor_card">
-              <img src="/src/img/Alex-Lebedev.jpg" alt="Alex-Lebedev" />
-              <h4>Alex Lebedev</h4>
+              <img src="img/Alex-Lebedev.jpg" alt="Alex-Lebedev" />
+              <h3>Alex Lebedev</h3>
               <p>3.5 years of experience</p>
             </li>
             <li class="our_mentor_card">
-              <img src="/src/img/Mia-Dubrovska.jpg" alt="Mia-Dubrovska" />
-              <h4>Mia Dubrovska</h4>
+              <img src="img/Mia-Dubrovska.jpg" alt="Mia-Dubrovska" />
+              <h3>Mia Dubrovska</h3>
               <p>2.0 years of experience</p>
             </li>
             <li class="our_mentor_card">
-              <img src="/src/img/Eliot-Kovalev.jpg" alt="Eliot-Kovalev" />
-              <h4>Eliot Kovalev</h4>
+              <img src="img/Eliot-Kovalev.jpg" alt="Eliot-Kovalev" />
+              <h3>Eliot Kovalev</h3>
               <p>4.0 years of experience</p>
             </li>
           </ul>
         </section>
-        <section class="section reviews">
-          <h2 class="review_title">Reviews</h2>
-          <ul class="review_list">
-            <li class="review_list_item">
-              <img src="/src/img/Abraham-Baker.jpg" alt="Abraham-Baker" />
-              <h3>Abraham Baker</h3>
-              <p>Student</p>
-              <div class="review_stars">
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-                <svg>
-                  <use></use>
-                </svg>
-              </div>
-              <p class="review_description">
-                I am very pleased that I decided to enroll in photography
-                school. The teachers turned out to be very talented and
-                experienced professionals who share their knowledge and are
-                dedicated to their work. I was able to expand my skills and
-                discover my own style.
-              </p>
-            </li>
-          </ul>
-        </section>
+
         <section class="section sign_up">
           <h2 class="sign_up_title">Sign Up</h2>
+        </section>
           <h6>
             Please use the form below to contact us. Enter your name, email, and
             message and we'll get back to you shortly.
@@ -79,7 +51,7 @@
             <label>
               <input
                 type="text"
-                pattern="[A-Za-z]"
+                pattern="[a-zA-Z]*"
                 id="sign_up_name"
                 name="name"
                 required
@@ -109,6 +81,41 @@
             By clicking on “Send” button, you agree to our Privacy Policy, and
             allow Promodo to use this information for marketing purposes.
           </p>
+        </section>
+
+        <section class="section reviews">
+          <h2 class="review_title">Reviews</h2>
+          <ul class="review_list">
+            <li class="review_list_item">
+              <img src="img/Abraham-Baker.jpg" alt="Abraham-Baker" />
+              <h4>Abraham Baker</h4>
+              <p>Student</p>
+              <div class="review_stars">
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+                <svg>
+                  <use></use>
+                </svg>
+              </div>
+              <p class="review_description">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
+          </ul>
         </section>
       </div>
     </main>
