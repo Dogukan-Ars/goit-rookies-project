@@ -21,11 +21,12 @@
 
 body {
     font-family: var(--primary-font);
+    background-color: var(--black-color);
+    color: var(--white-color);
 }
 
 h1, h2, h3, h4 {
     font-weight: 500;
-    color: var(--white-color);
 }
 
 h5, h6 {
