@@ -1,0 +1,46 @@
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --black-color: #121212;
+  --smoke-color: #1d1d1d;
+  --gradient-color: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown-color: #bea69e;
+  --white-color: #fff;
+  --arrow-color: rgba(255, 255, 255, 0.4);
+  --camera-color: rgba(190, 166, 158, 0.4);
+  --star-color: rgba(255, 255, 255, 0.2);
+  --star-stroke-color: #414141;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: var(--primary-font);
+    background-color: var(--black-color);
+    color: var(--white-color);
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+}
+
+h5, h6 {
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 1.10;
+    letter-spacing: -0.04em;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+}
