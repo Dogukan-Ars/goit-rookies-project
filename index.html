@@ -16,7 +16,34 @@
             <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#favicon"></use>
           </svg>
 
-          <!-- Menü -->
+          <div class="navbar-icons">
+            <svg>
+              <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#camera-icon"></use>
+            </svg>
+            <div class="navbar-burger-icon">Çizgiler</div>
+          </div>
+
+          <!-- Sidebar Menü -->
+          <div class="sidebar-menu">
+            <svg>
+              <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#x-icon"></use>
+            </svg>
+
+            <ul class="sidebar-links">
+              <li class="sidebar-link"><a href="#">ABOUT US</a></li>
+              <li class="sidebar-link"><a href="#">OUR COURSES</a></li>
+              <li class="sidebar-link"><a href="#">OUR MENTORS</a></li>
+              <li class="sidebar-link"><a href="#">REVIEWS</a></li>
+              <li class="sidebar-link"><a href="#">CONTACTS</a></li>
+            </ul>
+          </div>
+
+          <!-- Buton -->
+          <div class="sign-up-button">
+            <button type="submit" class="btn">SIGN UP</button>
+          </div>
+
+          <!-- Navbar Menü -->
           <ul class="navbar-links">
             <li class="navbar-link"><a href="#">ABOUT US</a></li>
             <li class="navbar-link"><a href="#">OUR COURSES</a></li>
@@ -24,18 +51,6 @@
             <li class="navbar-link"><a href="#">REVIEWS</a></li>
             <li class="navbar-link"><a href="#">CONTACTS</a></li>
           </ul>
-
-          <!-- Buton -->
-          <div class="sign-up-button">
-            <button type="submit" class="btn">SIGN UP</button>
-          </div>
-
-          <div class="navbar-icons">
-            <svg>
-              <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#camera-icon"></use>
-            </svg>
-            <div class="navbar-burger-icon">Çizgiler</div>
-          </div>
         </nav>
       </header>
       <main>
@@ -45,7 +60,7 @@
               Discover the magic of
               <span class="highlight">photography</span> in our school
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-desc">
               Our photography school offers an unforgettable journey, where you
               can learn the basics of composition, master technical skills,
               translate your unique ideas.
@@ -55,29 +70,36 @@
               <!-- Öğrenciler kısmı -->
               <div class="hero-students">
                 <img
-                  srcset="/vanilla-app-template/assets/caitlyn-FbINo79r.jpg 1x, /vanilla-app-template/assets/caitlyn@2x-B4u9Jh4b.jpg 2x"
-                  src="/vanilla-app-template/assets/caitlyn-FbINo79r.jpg"
+                  srcset="/vanilla-app-template/assets/caitlyn-BJ_L0_Z-.png 1x, /vanilla-app-template/assets/caitlyn@2x-B_jNdA2w.png 2x"
+                  src="/vanilla-app-template/assets/caitlyn-BJ_L0_Z-.png"
                   alt="student photo"
                   class="student-img"
                 />
                 <img
-                  srcset="data:image/jpeg;base64,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 1x, /vanilla-app-template/assets/jordan@2x-4C-KDZKn.jpg 2x"
-                  src="data:image/jpeg;base64,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"
+                  srcset="/vanilla-app-template/assets/jordan-BtQlH-la.png 1x, /vanilla-app-template/assets/jordan@2x-Cd8iafR5.png 2x"
+                  src="/vanilla-app-template/assets/jordan-BtQlH-la.png"
                   alt="student photo"
                   class="student-img"
                 />
                 <img
-                  srcset="/vanilla-app-template/assets/adriana-CDW7YD34.jpg 1x, ./img/adriana@2x.jpg 2x"
-                  src="/vanilla-app-template/assets/adriana-CDW7YD34.jpg"
+                  srcset="/vanilla-app-template/assets/adriana-CtYyITd2.png 1x, /vanilla-app-template/assets/adriana@2x-DFIhGKGU.png 2x"
+                  src="/vanilla-app-template/assets/adriana-CtYyITd2.png"
                   alt="student photo"
                   class="student-img"
                 />
-                <a href="#rewievs">Our happy students</a>
+                <a href="#rewievs"
+                  >Our happy students
+                  <svg>
+                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#arrow-right-icon"></use>
+                  </svg>
+                </a>
               </div>
 
               <!-- Reviews kısmı -->
               <div class="hero-reviews">
-                <span class="icon"></span>
+                <svg>
+                  <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
+                </svg>
                 <span>Reviews<br /><strong>+1500</strong></span>
               </div>
             </div>
@@ -218,8 +240,8 @@
           <ul class="our-mentors-cards">
             <li class="our-mentor-card">
               <img
-                srcset="/vanilla-app-template/assets/emilia-CXKgI8M8.jpg 1x, /vanilla-app-template/assets/emilia@2x-CNc-CeZn.jpg 2x"
-                src="/vanilla-app-template/assets/emilia-CXKgI8M8.jpg"
+                srcset="/vanilla-app-template/assets/emilia--qsPSqK6.png 1x, /vanilla-app-template/assets/emilia@2x-W_cUkIc5.png 2x"
+                src="/vanilla-app-template/assets/emilia--qsPSqK6.png"
                 alt="Emilia-Smith"
               />
               <h4>Emilia Smith</h4>
@@ -227,8 +249,8 @@
             </li>
             <li class="our-mentor-card">
               <img
-                srcset="/vanilla-app-template/assets/alex-Bqp5QQ3M.jpg 1x, /vanilla-app-template/assets/alex@2x-CSgpk-AQ.jpg 2x"
-                src="/vanilla-app-template/assets/alex-Bqp5QQ3M.jpg"
+                srcset="/vanilla-app-template/assets/alex-D9D1Tt9Q.png 1x, /vanilla-app-template/assets/alex@2x-D5RhAoN1.png 2x"
+                src="/vanilla-app-template/assets/alex-D9D1Tt9Q.png"
                 alt="Alex-Lebedev"
               />
               <h4>Alex Lebedev</h4>
@@ -236,8 +258,8 @@
             </li>
             <li class="our-mentor-card">
               <img
-                srcset="/vanilla-app-template/assets/mia-wqRtKTcB.jpg 1x, /vanilla-app-template/assets/mia@2x-CsqWR1Q1.jpg 2x"
-                src="/vanilla-app-template/assets/mia-wqRtKTcB.jpg"
+                srcset="/vanilla-app-template/assets/mia-Ciq0hxP1.png 1x, /vanilla-app-template/assets/mia@2x-DDOyGP-0.png 2x"
+                src="/vanilla-app-template/assets/mia-Ciq0hxP1.png"
                 alt="Mia-Dubrovska"
               />
               <h4>Mia Dubrovska</h4>
@@ -245,8 +267,8 @@
             </li>
             <li class="our-mentor-card">
               <img
-                srcset="/vanilla-app-template/assets/eliot-ClWyapr0.jpg 1x, /vanilla-app-template/assets/eliot@2x-DlDfrG2V.jpg 2x"
-                src="/vanilla-app-template/assets/eliot-ClWyapr0.jpg"
+                srcset="/vanilla-app-template/assets/eliot-C2yGCZEH.png 1x, /vanilla-app-template/assets/eliot@2x-DvKs3C2d.png 2x"
+                src="/vanilla-app-template/assets/eliot-C2yGCZEH.png"
                 alt="Eliot-Kovalev"
               />
               <h4>Eliot Kovalev</h4>
@@ -263,19 +285,40 @@
           <ul class="review-list">
             <li class="review-list-item">
               <img
-                srcset="/vanilla-app-template/assets/user_abraham-WM9zkm7o.jpg 1x, /vanilla-app-template/assets/user_abraham@2x-9XnPKU7k.jpg 2x"
-                src="/src/img/user_abraham.jpg"
+                srcset="/vanilla-app-template/assets/user_abraham-COW7BOyG.png 1x, /vanilla-app-template/assets/user_abraham@2x-D0sXEDwu.png 2x"
+                src="/src/img/user_abraham.png"
                 alt="Abraham-Baker"
               />
               <h3>Abraham Baker</h3>
               <p>Student</p>
-              <div class="review-stars">
-                <svg>
-                  <use>
-                    <!-- Yıldız iconları yer alacak -->
-                  </use>
-                </svg>
-              </div>
+              <ul class="review-star-list">
+                <!-- Yıldız iconları yer alacak -->
+                <li class="review-star">
+                  <svg>
+                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
+                  </svg>
+                </li>
+              </ul>
               <p class="review-description">
                 I am very pleased that I decided to enroll in photography
                 school. The teachers turned out to be very talented and
@@ -286,8 +329,8 @@
             </li>
             <li class="review-list-item">
               <img
-                srcset="/vanilla-app-template/assets/user_amanda-BZqbBJYN.jpg 1x, /vanilla-app-template/assets/user_amanda@2x-CA46kPnf.jpg 2x"
-                src="/src/img/user_amanda.jpg"
+                srcset="/vanilla-app-template/assets/user_amanda-BBh2pQOl.png 1x, /vanilla-app-template/assets/user_amanda@2x-BQCKoZm5.png 2x"
+                src="/src/img/user_amanda.png"
                 alt="Amanda-Lowery"
               />
               <h3>Abraham Baker</h3>
