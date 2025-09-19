@@ -1,0 +1,181 @@
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --black-color: #121212;
+  --smoke-color: #1d1d1d;
+  --gradient-color: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown-color: #bea69e;
+  --white-color: #fff;
+  --arrow-color: rgba(255, 255, 255, 0.4);
+  --camera-color: rgba(190, 166, 158, 0.4);
+  --star-color: rgba(255, 255, 255, 0.2);
+  --star-stroke-color: #414141;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+
+  color: var(--white-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+h5,
+h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.section {
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Hero Kartı */
+
+.hero-section {
+  position: relative;
+  margin-top: 20px;
+  background: var(--smoke-color);
+  border-radius: 24px;
+  overflow: hidden;
+  padding: 40px 20px 0 20px;
+  min-height: 777px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+/* İçerik sütunu: soldaki metin alanı */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 295px;
+}
+
+.highlight {
+  color: var(--brown-color);
+  font-style: italic;
+}
+
+/* Açıklama paragrafı */
+
+.hero-desc {
+  margin-top: 14px;
+  font-size: 14px;
+  line-height: 1.28;
+  color: var(--white-color);
+}
+
+/* İstatistik Şeridi Avatarlar + Reviews */
+
+.hero-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  padding-left: 20px;
+}
+/* Öğrenciler grubu */
+
+.hero-students {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.student-img {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--smoke-color);
+  margin-left: -20px;
+}
+
+.hero-students a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero-students a svg {
+  width: 18px;
+  height: 10px;
+  flex-shrink: 0;
+}
+
+.hero-text {
+  width: 100px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  gap: 4px;
+}
+
+/* Reviews grubu */
+.hero-reviews {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.hero-reviews span {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.1;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.hero-reviews svg {
+  display: block;
+  width: 44px;
+  height: 44px;
+  fill: var(--star-color);
+  stroke: var(--star-stroke-color);
+}
+
+/* Hero Görseli */
+.hero-image {
+  position: absolute;
+  padding: 0 20px;
+  bottom: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.hero-image img {
+  display: block;
+  width: 265px;
+  margin: 0 auto;
+}
