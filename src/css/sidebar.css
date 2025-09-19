@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+}
+
+.header-section{
+    width: max-content;
+    height: min-content;
+}
+.navbar-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #111;
+    /* navbar arka plan rengi */
+    border: 1px solid #bea69e;
+    border-radius: 12px;
+    width: 350px;
+    height: 50px;
+    padding: 10px 20px;
+}
+
+.navbar-links{
+    display: none;
+}
+
+#nav-logo {
+    text-decoration: none;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #fff;
+}
+
+.camera-icon-svg{
+    width: 32px;
+    height: 32px;
+}
+
+.sidebar-menu-lines{
+    width: min-content;
+    height: max-content;
+    cursor: pointer;
+}
+
+.line-1 , .line-3{
+    width: 32px;
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.line-2{
+    width:16px;
+    margin-left: 15.5px;
+    fill: #fff;
+    border: 2px solid white;
+    border-radius: 4px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+}
+
+.icon{
+    width: 32px;
+    height: 32px;
+    margin-left: 100px;
+}
