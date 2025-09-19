@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+.our-courses {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(6, 7, 7, 1);
+}
+.our-courses-title {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 500;
+}
+.our-courses-title span {
+  color: rgba(190, 166, 158, 1);
+}
+
+.our-courses-header p {
+  color: #fff;
+  font-size: 14px;
+}
+.our-courses-header {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  padding: 20px;
+}
+.our-courses-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.our-courses-card {
+  background: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin: 20px;
+  border-radius: 12px;
+  min-height: 320px;
+}
+.our-courses-card-header {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(255, 255, 255, 0.4);
+  padding: 28px;
+}
+.our-courses-card-header p {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  letter-spacing: -2%;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.our-courses-card-title h2 {
+  display: flex;
+  color: #fff;
+  width: 50%;
+  font-size: 28px;
+  text-align: left;
+  font-weight: 500;
+  padding: 28px;
+  line-height: 32px;
+}
+
+.our-courses-card-desc p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  font-weight: 400;
+  text-align: left;
+  padding: 28px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 100px;
+}
+.svg {
+  width: 32px;
+  height: 32px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.our-courses-card-header svg {
+  width: 20px;
+  height: 20px;
+}
+.our-courses-card-header p {
+  font-size: 14px;
+  letter-spacing: -2%;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+@media (min-width: 768px) {
+  .our-courses-header {
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+    padding: 10px 32px;
+  }
+  .our-courses-title {
+    display: flex;
+    gap: 8px;
+    font-size: 48px;
+    line-height: 54px;
+    letter-spacing: -4%;
+  }
+  .our-courses-header p {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -2%;
+    color: rgba(255, 255, 255, 1);
+  }
+  .our-courses-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px 32px;
+  }
+  .our-courses-card-desc {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -2%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .our-courses-header {
+    gap: 410px;
+    padding: 10px 100px;
+  }
+  .our-courses-cards {
+    display: flex;
+    padding: auto 100px;
+  }
+
+  .our-courses-card-desc {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -2%;
+  }
+}
