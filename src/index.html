@@ -13,10 +13,36 @@
         <nav class="navbar-section">
           <!-- Logo -->
           <svg class="navbar-logo">
-            <use href="./img/symbol-defs.svg#favicon"></use>
+            <use href="./img/svg/symbol-defs.svg#favicon"></use>
           </svg>
+          <div class="navbar-icons">
+            <svg>
+              <use href="./img/svg/symbol-defs.svg#camera-icon"></use>
+            </svg>
+            <div class="navbar-burger-icon">Çizgiler</div>
+          </div>
 
-          <!-- Menü -->
+          <!-- Sidebar Menü -->
+          <div class="sidebar-menu">
+            <svg>
+              <use href="./img/svg/symbol-defs.svg#x-icon"></use>
+            </svg>
+
+            <ul class="sidebar-links">
+              <li class="sidebar-link"><a href="#">ABOUT US</a></li>
+              <li class="sidebar-link"><a href="#">OUR COURSES</a></li>
+              <li class="sidebar-link"><a href="#">OUR MENTORS</a></li>
+              <li class="sidebar-link"><a href="#">REVIEWS</a></li>
+              <li class="sidebar-link"><a href="#">CONTACTS</a></li>
+            </ul>
+          </div>
+
+          <!-- Buton -->
+          <div class="sign-up-button">
+            <button type="submit" class="btn">SIGN UP</button>
+          </div>
+
+          <!-- Navbar Menü -->
           <ul class="navbar-links">
             <li class="navbar-link"><a href="#">ABOUT US</a></li>
             <li class="navbar-link"><a href="#">OUR COURSES</a></li>
@@ -24,18 +50,6 @@
             <li class="navbar-link"><a href="#">REVIEWS</a></li>
             <li class="navbar-link"><a href="#">CONTACTS</a></li>
           </ul>
-
-          <!-- Buton -->
-          <div class="sign-up-button">
-            <button type="submit" class="btn">SIGN UP</button>
-          </div>
-
-          <div class="navbar-icons">
-            <svg>
-              <use href="./img/symbol-defs.svg#camera-icon"></use>
-            </svg>
-            <div class="navbar-burger-icon">Çizgiler</div>
-          </div>
         </nav>
       </header>
       <main>
@@ -45,7 +59,7 @@
               Discover the magic of
               <span class="highlight">photography</span> in our school
             </h1>
-            <p class="hero-subtitle">
+            <p class="hero-desc">
               Our photography school offers an unforgettable journey, where you
               can learn the basics of composition, master technical skills,
               translate your unique ideas.
@@ -55,29 +69,38 @@
               <!-- Öğrenciler kısmı -->
               <div class="hero-students">
                 <img
-                  srcset="./img/caitlyn.jpg 1x, ./img/caitlyn@2x.jpg 2x"
-                  src="./img/caitlyn.jpg"
+                  srcset="./img/caitlyn.png 1x, ./img/caitlyn@2x.png 2x"
+                  src="./img/caitlyn.png"
                   alt="student photo"
                   class="student-img"
                 />
                 <img
-                  srcset="./img/jordan.jpg 1x, ./img/jordan@2x.jpg 2x"
-                  src="./img/jordan.jpg"
+                  srcset="./img/jordan.png 1x, ./img/jordan@2x.png 2x"
+                  src="./img/jordan.png"
                   alt="student photo"
                   class="student-img"
                 />
                 <img
-                  srcset="./img/adriana.jpg 1x, ./img/adriana@2x.jpg 2x"
-                  src="./img/adriana.jpg"
+                  srcset="./img/adriana.png 1x, ./img/adriana@2x.png 2x"
+                  src="./img/adriana.png"
                   alt="student photo"
                   class="student-img"
                 />
-                <a href="#rewievs">Our happy students</a>
+                <a href="#rewievs"
+                  >Our happy students
+                  <svg>
+                    <use
+                      href="./img/svg/symbol-defs.svg#arrow-right-icon"
+                    ></use>
+                  </svg>
+                </a>
               </div>
 
               <!-- Reviews kısmı -->
               <div class="hero-reviews">
-                <span class="icon"></span>
+                <svg>
+                  <use href="./img/svg/symbol-defs.svg#star-icon"></use>
+                </svg>
                 <span>Reviews<br /><strong>+1500</strong></span>
               </div>
             </div>
@@ -154,7 +177,9 @@
                 <div class="our-courses-card-header">
                   <p>01</p>
                   <svg>
-                    <use href="./img/symbol-defs.svg#arrow-diagonal-icon"></use>
+                    <use
+                      href="./img/svg/symbol-defs.svg#arrow-diagonal-icon"
+                    ></use>
                   </svg>
                 </div>
                 <div class="our-courses-card-title">
@@ -172,7 +197,9 @@
                 <div class="our-courses-card-header">
                   <p>02</p>
                   <svg>
-                    <use href="./img/symbol-defs.svg#arrow-diagonal-icon"></use>
+                    <use
+                      href="./img/svg/symbol-defs.svg#arrow-diagonal-icon"
+                    ></use>
                   </svg>
                 </div>
                 <div class="our-courses-card-title">
@@ -190,7 +217,9 @@
                 <div class="our-courses-card-header">
                   <p>03</p>
                   <svg>
-                    <use href="./img/symbol-defs.svg#arrow-diagonal-icon"></use>
+                    <use
+                      href="./img/svg/symbol-defs.svg#arrow-diagonal-icon"
+                    ></use>
                   </svg>
                 </div>
                 <div class="our-courses-card-title">
@@ -218,8 +247,8 @@
           <ul class="our-mentors-cards">
             <li class="our-mentor-card">
               <img
-                srcset="./img/emilia.jpg 1x, ./img/emilia@2x.jpg 2x"
-                src="./img/emilia.jpg"
+                srcset="./img/emilia.png 1x, ./img/emilia@2x.png 2x"
+                src="./img/emilia.png"
                 alt="Emilia-Smith"
               />
               <h4>Emilia Smith</h4>
@@ -227,8 +256,8 @@
             </li>
             <li class="our-mentor-card">
               <img
-                srcset="./img/alex.jpg 1x, ./img/alex@2x.jpg 2x"
-                src="./img/alex.jpg"
+                srcset="./img/alex.png 1x, ./img/alex@2x.png 2x"
+                src="./img/alex.png"
                 alt="Alex-Lebedev"
               />
               <h4>Alex Lebedev</h4>
@@ -236,8 +265,8 @@
             </li>
             <li class="our-mentor-card">
               <img
-                srcset="./img/mia.jpg 1x, ./img/mia@2x.jpg 2x"
-                src="./img/mia.jpg"
+                srcset="./img/mia.png 1x, ./img/mia@2x.png 2x"
+                src="./img/mia.png"
                 alt="Mia-Dubrovska"
               />
               <h4>Mia Dubrovska</h4>
@@ -245,8 +274,8 @@
             </li>
             <li class="our-mentor-card">
               <img
-                srcset="./img/eliot.jpg 1x, ./img/eliot@2x.jpg 2x"
-                src="./img/eliot.jpg"
+                srcset="./img/eliot.png 1x, ./img/eliot@2x.png 2x"
+                src="./img/eliot.png"
                 alt="Eliot-Kovalev"
               />
               <h4>Eliot Kovalev</h4>
@@ -263,19 +292,40 @@
           <ul class="review-list">
             <li class="review-list-item">
               <img
-                srcset="./img/user_abraham.jpg 1x, ./img/user_abraham@2x.jpg 2x"
-                src="/src/img/user_abraham.jpg"
+                srcset="./img/user_abraham.png 1x, ./img/user_abraham@2x.png 2x"
+                src="/src/img/user_abraham.png"
                 alt="Abraham-Baker"
               />
               <h3>Abraham Baker</h3>
               <p>Student</p>
-              <div class="review-stars">
-                <svg>
-                  <use>
-                    <!-- Yıldız iconları yer alacak -->
-                  </use>
-                </svg>
-              </div>
+              <ul class="review-star-list">
+                <!-- Yıldız iconları yer alacak -->
+                <li class="review-star">
+                  <svg>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
+                  </svg>
+                </li>
+                <li class="review-star">
+                  <svg>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
+                  </svg>
+                </li>
+              </ul>
               <p class="review-description">
                 I am very pleased that I decided to enroll in photography
                 school. The teachers turned out to be very talented and
@@ -286,8 +336,8 @@
             </li>
             <li class="review-list-item">
               <img
-                srcset="./img/user_amanda.jpg 1x, ./img/user_amanda@2x.jpg 2x"
-                src="/src/img/user_amanda.jpg"
+                srcset="./img/user_amanda.png 1x, ./img/user_amanda@2x.png 2x"
+                src="/src/img/user_amanda.png"
                 alt="Amanda-Lowery"
               />
               <h3>Abraham Baker</h3>
@@ -296,27 +346,27 @@
                 <!-- Yıldız iconları yer alacak -->
                 <li class="review-star">
                   <svg>
-                    <use href="./img/symbol-defs.svg#star-icon"></use>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
                   </svg>
                 </li>
                 <li class="review-star">
                   <svg>
-                    <use href="./img/symbol-defs.svg#star-icon"></use>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
                   </svg>
                 </li>
                 <li class="review-star">
                   <svg>
-                    <use href="./img/symbol-defs.svg#star-icon"></use>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
                   </svg>
                 </li>
                 <li class="review-star">
                   <svg>
-                    <use href="./img/symbol-defs.svg#star-icon"></use>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
                   </svg>
                 </li>
                 <li class="review-star">
                   <svg>
-                    <use href="./img/symbol-defs.svg#star-icon"></use>
+                    <use href="./img/svg/symbol-defs.svg#star-icon"></use>
                   </svg>
                 </li>
               </ul>
