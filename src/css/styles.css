@@ -20,27 +20,31 @@
 }
 
 body {
-    font-family: var(--primary-font);
-    background-color: var(--black-color);
-    color: var(--white-color);
+  font-family: var(--primary-font);
+  background-color: var(--black-color);
+  color: var(--white-color);
 }
 
-h1, h2, h3, h4 {
-    font-weight: 500;
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
 }
 
-h5, h6 {
-    font-weight: 400;
+h5,
+h6 {
+  font-weight: 400;
 }
 
 h1 {
-    font-size: 40px;
-    line-height: 1.10;
-    letter-spacing: -0.04em;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
 }
 
 h2 {
-    font-size: 28px;
-    line-height: 1.14;
-    letter-spacing: -0.02em;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
 }

@@ -43,9 +43,11 @@
 }
 
 /* Mentor name */
-.our-mentor-card h3 {
+.our-mentor-card h4 {
   color: #ffffff;
   margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 /* Mentor experience */
@@ -58,4 +60,114 @@
     255,
     0.5
   ); /* rgba kullanıldı renk beyaz ama gri renk olması için 0.5 kullanıldı. */
+}
+/* --- Our Mentors Section (güncel, hatasız) --- */
+.section.our-mentors {
+  background-color: #111111;
+  padding: 40px 20px;
+}
+
+/* Başlık: başlık ile kartlar arasında 50px */
+.our-mentors-title {
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.our-mentors-title .section-title-colored {
+  color: var(--brown-color);
+}
+
+/* Kart listesi - mobile (default) */
+.our-mentors-cards {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+/* Her kart - mobil */
+.our-mentor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+}
+
+/* Görsel */
+.our-mentor-card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+/* İsim */
+.our-mentor-card h4 {
+  color: #ffffff;
+  margin-bottom: 8px;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* Deneyim */
+.our-mentor-card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+/* TABLET: 768px — 1279px   */
+
+@media (min-width: 768px) and (max-width: 1279px) {
+  .our-mentors-cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 100px; /* yan yana kartlar arası sabit boşluk */
+    row-gap: 93px; /* alt alta kartlar arası sabit boşluk */
+    align-items: flex-start;
+  }
+
+  .our-mentor-card {
+    flex: 0 0 calc((100% - 100px) / 2); /* 2 sütun, 100px boşluk sabit */
+    max-width: calc((100% - 100px) / 2);
+  }
+}
+
+/* DESKTOP: ≥1280px  (4 sütun kesin) */
+/* 4 sütun için gap = 100px => her sütun = calc(25% - 75px) */
+
+@media (min-width: 1280px) {
+  .our-mentors-cards {
+    flex-direction: row;
+    flex-wrap: nowrap; /* 4'ü 1 satırda görmek istiyoruz */
+    justify-content: center;
+    gap: 100px;
+    align-items: flex-start;
+  }
+
+  .our-mentor-card {
+    flex: 0 0 calc(25% - 75px);
+    max-width: calc(25% - 75px);
+  }
+}
+
+/* FOCUSFRAME: ≥1440px  (aynı 4 sütun, geniş aralık) */
+
+@media (min-width: 1440px) {
+  .our-mentors-cards {
+    gap: 100px;
+  }
+
+  .our-mentor-card {
+    flex: 0 0 calc(25% - 75px);
+    max-width: calc(25% - 75px);
+  }
 }
