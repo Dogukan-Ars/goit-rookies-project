@@ -16,8 +16,6 @@ body {
   color: var(--white-color);
 }
 .sign-up-section {
-  width: 1080px;
-  height: 578px;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -96,30 +94,32 @@ body {
   margin-top: 20px;
 }
 .sign-up-img {
+  display: flex;
   width: 540px;
   height: 540px;
   visibility: visible;
 }
-#small-photo {
-  width: 150px;
-  height: 142px;
+.small-photo {
+  display: flex;
+  justify-content: center;
   background-color: var(--brown-color);
   border-radius: 1000px;
-  padding-top: 76px;
-  padding-bottom: 62px;
-  padding-right: 19px;
+  padding: 76px 19px 62px 19px;
   margin-top: 252px;
   margin-right: 20px;
 }
-#big-photo {
+
+.small-photo > img {
+  width: 150px;
+  height: 142px;
+}
+.big-photo {
   width: 240px;
   height: 296px;
   background-color: var(--smoke-color);
   border-radius: 1000px;
-  padding-top: 156px;
-  padding-bottom: 88px;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 156px 50px 88px 50px;
+  background-size: cover;
 }
 .sing-up-policy {
   text-decoration: underline;
@@ -128,4 +128,11 @@ body {
   font-size: 12px;
   line-height: 1.28571;
   color: rgba(255, 255, 255, 0.5);
+}
+.section {
+  padding: 100px 150px;
+  overflow: hidden;
+}
+body {
+  overflow-x: hidden;
 }
