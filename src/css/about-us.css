@@ -1,58 +1,76 @@
+/*Bölümü Hizalamak İçin*/
 .section.about-us {
   margin: 80px 20px 60px 20px;
-  max-width: 1200px;
 }
+
+/*Başlık*/
 .section-title-colored {
   color: #bea69e;
 }
+
+/*Görsel*/
 .about-us-content img {
+  width: 100%;
+  max-height: 335px;
   margin: 40px 0;
-    width: 100%;
-    object-fit: cover;
+  object-fit: cover;
+  display: block;
+  border-radius: 1000px;
 }
 
+/*Metin*/
 .about-us-content {
   font-size: 14px;
   gap: 20px;
 }
 
 .about-us-text {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 /* Tablet */
 @media (min-width: 768px) {
-  .about-us-content {
-    min-width: 340px;
-    max-width: auto;
-    height: 704px;
-    display: flex;
-    flex-direction: column;
-  }
-  .about-us-content img {
+  /*Tablet Görsel*/
+  .frame {
     width: 100%;
-    height: 704px;
-}
+    position: relative;
+    height: auto;
+  }
 
-.about-us-text {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
+  .about-us-content img {
+    display: block;
+    position: static;
+    top: -78px;
+  }
 
+  /*Tablet Metin*/
+  .about-us-content {
+  }
+
+  .about-us-text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /* Desktop */
 @media (min-width: 1280px) {
-.about-us-content{
-    display: flex;
-    flex-direction: row;
-    }
-.about-us-content img {
-    margin-right: 50px;
+  /*Desktop Görsel*/
+  .frame {
+    width: 100%;
+    height: auto;
+    max-height: 220px;
+    object-fit: contain;
+    position: relative;
+  }
+  .about-us-content img {
+    position: static;
   }
 
-.about-us-content img, .about-us-text{
-    width: 50%;
-
-} 
+  /*Desktop Metin*/
+  .about-us-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 }
