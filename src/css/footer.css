@@ -1,0 +1,213 @@
+.footer-section {
+    background-color: var(--black-color);
+    padding: 20px 0;
+}
+
+.footer-content {
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.footer-brand {
+    margin-bottom: 20px;
+}
+
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.footer-contacts a {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.footer-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    flex-wrap: wrap;
+
+}
+
+
+.footer-social ul,
+.footer-list ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-social a,
+.footer-list a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--white-color);
+}
+
+
+.footer-form {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    flex-wrap: nowrap;
+}
+
+#footer-email {
+    border-radius: 12px;
+    width: 100%;
+    height: 60px;
+    padding: 0 12px;
+    font-size: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    outline: none;
+    color: #121212;
+    opacity: 0.7;
+}
+
+.footer-form-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background-color: #1d1d1d;
+    color: var(--white-color);
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.footer-kapsayici {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+
+.footer-kapsayici2 {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .footer-content {
+        max-width: 768px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        margin-right: 20px;
+    }
+
+    .footer-contacts {
+        margin-bottom: 0;
+        margin-top: 30px;
+    }
+
+    .footer-contacts a {
+        font-size: 16px;
+        max-width: 225px;
+    }
+
+    .all {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 20px;
+
+
+
+    }
+
+    .footer-kapsayici {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
+
+
+    }
+
+    .footer-kapsayici2 {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    .footer-navbar {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .footer-social-lists {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .footer-form {
+        display: flex;
+        gap: 8px;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: auto;
+    }
+
+    #footer-email {
+        width: 200px;
+        height: 60px;
+        padding: 0 12px;
+    }
+
+    .footer-form-button {
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+}
