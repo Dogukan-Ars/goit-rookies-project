@@ -18,12 +18,13 @@
   border-radius: 1000px;
 }
 
-/*Metin*/
+/*Metin ve Görsel İçeriği*/
 .about-us-content {
   font-size: 14px;
   gap: 20px;
 }
 
+/*Metin*/
 .about-us-text {
   display: flex;
   flex-direction: column;
@@ -47,7 +48,7 @@
     min-width: 540px;
   }
 
-  /*Desktop Metin*/
+  /*Desktop Metin ve Görsel İçeriği*/
   .about-us-content {
     display: flex;
     flex-direction: row;
