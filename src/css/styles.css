@@ -44,3 +44,19 @@ h2 {
     line-height: 1.14;
     letter-spacing: -0.02em;
 }
+
+.section {
+    padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        padding: 0 32px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section {
+        padding: 150px 100px;
+    }
+}

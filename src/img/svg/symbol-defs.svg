@@ -21,10 +21,15 @@
             <path fill="#fff" style="fill: var(--color1, #fff)" d="M229.936 17.489h9.638c-0.096-3.451-2.398-5.105-4.844-5.105-2.492 0-4.554 1.891-4.794 5.105zM246 21.365h-16.256c0.192 3.498 2.206 5.767 5.274 5.767 2.014 0 3.788-0.993 4.22-2.6h6.426c-1.438 4.774-5.322 7.468-10.358 7.468-7.864 0-11.796-4.254-11.796-12.668 0-7.185 4.172-11.817 11.412-11.817 7.242 0 11.078 4.632 11.078 13.849z"></path>
         </symbol>
 
-        <!-- Star Icon -->
-        <symbol id="star-icon" viewBox="0 0 32 32">
+        <!-- Hero Section Star Icon -->
+        <symbol id="hero-star-icon" viewBox="0 0 32 32">
             <path fill="#bea69e" style="fill: var(--color2, #bea69e)" d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16c-8.837 0-16-7.163-16-16s7.163-16 16-16z"></path>
             <path fill="none" stroke="#121212" style="stroke: var(--color3, #121212)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.0909" d="M16 9.939l1.873 3.794 4.188 0.612-3.030 2.952 0.715 4.17-3.745-1.97-3.745 1.97 0.715-4.17-3.030-2.951 4.188-0.612 1.873-3.794z"></path>
+        </symbol>
+
+        <!-- Advertisement Line Icon -->
+        <symbol id="line-icon" width="768" height="2" viewBox="0 0 768 2" fill="none">
+            <path d="M0 1H768" stroke="white" stroke-opacity="0.2" />
         </symbol>
 
         <!-- Camera Icon -->
@@ -54,7 +59,7 @@
             <path fill="#bea69e" style="fill: var(--color2, #bea69e); stroke: var(--color2, #bea69e)" stroke="#bea69e" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M56 4l3.708 7.899 8.292 1.274-6 6.145 1.416 8.681-7.416-4.101-7.416 4.101 1.416-8.681-6-6.145 8.292-1.274 3.708-7.899z"></path>
             <path fill="#bea69e" style="fill: var(--color2, #bea69e); stroke: var(--color2, #bea69e)" stroke="#bea69e" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M96 4l3.708 7.899 8.292 1.274-6 6.145 1.416 8.681-7.416-4.101-7.416 4.101 1.416-8.681-6-6.145 8.292-1.274 3.708-7.899z"></path>
             <path fill="#bea69e" style="fill: var(--color2, #bea69e); stroke: var(--color2, #bea69e)" stroke="#bea69e" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M136 4l3.708 7.899 8.292 1.274-6 6.145 1.416 8.681-7.416-4.101-7.416 4.101 1.416-8.681-6-6.145 8.292-1.274 3.708-7.899z"></path>
-            <path fill="#fff" style="fill: var(--color1, #fff); stroke: var(--color6, #414141)" opacity="0.2" stroke="#414141" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M176 4l3.708 7.899 8.292 1.274-6 6.145 1.416 8.681-7.416-4.101-7.416 4.101 1.416-8.681-6-6.145 8.292-1.274 3.708-7.899z"></path>
+            <path fill="#fff;" style="fill: var(--color1, #fff); stroke: var(--color6, #414141)" opacity="0.2" stroke="none" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M176 4l3.708 7.899 8.292 1.274-6 6.145 1.416 8.681-7.416-4.101-7.416 4.101 1.416-8.681-6-6.145 8.292-1.274 3.708-7.899z"></path>
         </symbol>
 
         <!-- X Icon -->

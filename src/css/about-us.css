@@ -1,0 +1,96 @@
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --black-color: #121212;
+  --smoke-color: #1d1d1d;
+  --gradient-color: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown-color: #bea69e;
+  --white-color: #fff;
+  --arrow-color: rgba(255, 255, 255, 0.4);
+  --camera-color: rgba(190, 166, 158, 0.4);
+  --star-color: rgba(255, 255, 255, 0.2);
+  --star-stroke-color: #414141;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.section {
+  padding: 100px 32px;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.section-title {
+  font-size: 28px;
+}
+
+.section-title-colored {
+  color: #bea69e;
+}
+.about-us-content img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.about-us-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 14px;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+/* Tablet */
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 48px;
+  }
+  .about-us-content {
+    min-width: 340px;
+    height: 704px;
+    display: flex;
+    flex-direction: column;
+  }
+  .about-us-content img {
+    width: 100%;
+  }
+
+  .about-us-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr 14%;
+    gap: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+  .about-us-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-us-content img {
+    margin-right: 50px;
+  }
+
+  .about-us-content img,
+  .about-us-text {
+    width: 50%;
+  }
+}
