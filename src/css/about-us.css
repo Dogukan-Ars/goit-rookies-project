@@ -31,40 +31,20 @@
 }
 /* Tablet */
 @media (min-width: 768px) {
-  /*Tablet Görsel*/
-  .frame {
-    width: 100%;
-    position: relative;
-    height: auto;
-  }
-
-  .about-us-content img {
-    display: block;
-    position: static;
-    top: -78px;
-  }
-
   /*Tablet Metin*/
-  .about-us-content {
-  }
-
   .about-us-text {
     display: grid;
+    margin-right: 104px;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
   }
 }
 /* Desktop */
 @media (min-width: 1280px) {
   /*Desktop Görsel*/
-  .frame {
-  }
   .about-us-content img {
-    width: 100%;
-    max-width: none;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-    position: static;
+    max-height: 220px;
+    min-width: 540px;
   }
 
   /*Desktop Metin*/
@@ -72,10 +52,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-  }
-  .about-us-text {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+    gap: 50px;
   }
 }
