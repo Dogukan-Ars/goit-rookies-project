@@ -1,0 +1,131 @@
+:root {
+  --primary-font: "DM Sans", sans-serif;
+  --black-color: #121212;
+  --smoke-color: #1d1d1d;
+  --gradient-color: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown-color: #bea69e;
+  --white-color: #fff;
+  --arrow-color: rgba(255, 255, 255, 0.4);
+  --camera-color: rgba(190, 166, 158, 0.4);
+  --star-color: rgba(255, 255, 255, 0.2);
+  --star-stroke-color: #414141;
+}
+body {
+  font-family: var(--primary-font);
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+.sign-up-section {
+  width: 1080px;
+  height: 578px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 60px;
+}
+.sign-up-content {
+  width: 335px;
+  height: 523px;
+}
+.sign-up-title {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.14286;
+  letter-spacing: -0.04em;
+  color: #fff;
+}
+.section-title-colored {
+  color: #bea69e;
+}
+.sign-up-form {
+  margin-top: 20px;
+}
+#sign-up-name {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  width: 317px;
+  height: 46px;
+  background-color: #121212;
+  margin-top: 41px;
+  padding-left: 18px;
+}
+#sign-up-mail {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  width: 317px;
+  height: 46px;
+  background-color: #121212;
+  margin-top: 8px;
+  padding-left: 18px;
+}
+#sign-up-message {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  width: 317px;
+  height: 90px;
+  background-color: #121212;
+  margin-top: 8px;
+  resize: none;
+  padding-left: 18px;
+  padding-top: 21px;
+}
+.sign-up-button {
+  border: 0px;
+  border-radius: 12px;
+  padding: 14px 127px;
+  width: 335px;
+  height: 48px;
+  margin-top: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+  color: #121212;
+}
+.sign-up-button:hover,
+:focus {
+  background-color: var(--smoke-color);
+  color: var(--white-color);
+}
+.sign-up-form-permission {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.33333;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
+}
+.sign-up-img {
+  width: 540px;
+  height: 540px;
+  visibility: visible;
+}
+#small-photo {
+  width: 150px;
+  height: 142px;
+  background-color: var(--brown-color);
+  border-radius: 1000px;
+  padding-top: 76px;
+  padding-bottom: 62px;
+  padding-right: 19px;
+  margin-top: 252px;
+  margin-right: 20px;
+}
+#big-photo {
+  width: 240px;
+  height: 296px;
+  background-color: var(--smoke-color);
+  border-radius: 1000px;
+  padding-top: 156px;
+  padding-bottom: 88px;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.sing-up-policy {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.28571;
+  color: rgba(255, 255, 255, 0.5);
+}

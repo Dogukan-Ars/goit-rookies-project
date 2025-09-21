@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/ali.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="section sign-up-section">
+      <div class="sign-up-content">
+        <!-- Sign Up Başlık -->
+        <h2 class="sign-up-title">
+          Sign <span class="section-title-colored">Up</span>
+        </h2>
+
+        <!-- Sign Up Alt Başlık -->
+        <p>
+          Please use the form below to contact us. Enter your name, email, and
+          message and we'll get back to you shortly.
+        </p>
+
+        <!-- Sign Up Form Yapısı -->
+        <form class="sign-up-form">
+          <label>
+            <input
+              type="text"
+              pattern="[A-Za-z]"
+              id="sign-up-name"
+              name="name"
+              required
+              placeholder="Enter your name"
+            />
+          </label>
+          <label>
+            <input
+              type="email"
+              pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+              id="sign-up-mail"
+              name="email"
+              required
+              placeholder="Enter your email"
+            />
+          </label>
+          <label>
+            <textarea
+              id="sign-up-message"
+              name="message"
+              placeholder="Message"
+              rows="5"
+              required
+            ></textarea>
+          </label>
+        </form>
+        <button class="sign-up-button" type="submit">Send</button>
+        <p class="sign-up-form-permission">
+          By clicking on “Send” button, you agree to our
+          <a href="..." class="sing-up-policy">Privacy Policy</a>, and allow
+          Promodo to use this information for marketing purposes.
+        </p>
+      </div>
+      <div class="sign-up-img">
+        <img
+          srcset="./img/small_photo.png 1x, ./img/small_photo@2x.png 2x"
+          src="./img/small_photo.png"
+          alt="Camera Lens Photo"
+          id="small-photo"
+        />
+        <img
+          srcset="./img/big_photo.png 1x, ./img/big_photo@2x.png 2x"
+          src="./img/big_photo.png"
+          alt="ProCamera Photo"
+          id="big-photo"
+        />
+      </div>
+    </section>
+  </body>
+</html>
