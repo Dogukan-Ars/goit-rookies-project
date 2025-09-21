@@ -57,13 +57,13 @@
 @media (min-width: 1280px) {
   /*Desktop Görsel*/
   .frame {
-    width: 100%;
-    height: auto;
-    max-height: 220px;
-    object-fit: contain;
-    position: relative;
   }
   .about-us-content img {
+    width: 100%;
+    max-width: none;
+    height: 220px;
+    object-fit: cover;
+    display: block;
     position: static;
   }
 
@@ -72,5 +72,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+  }
+  .about-us-text {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 }
