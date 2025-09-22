@@ -4,39 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/sidebar.css" />
   </head>
   <body>
-     <div class="coantainer">
+    <div class="container">
       <header class="section header-section">
         <nav class="navbar-section">
-          <!-- Logo -->
-          <div class="navbar-logo">
-            <a id="nav-logo" href="#">Focus.<span>Frame</span></a>
-          </div>
-
-          <div class="icon">
-             <svg class="camera-icon-svg">
-              <use  href="./img/symbol-defs.svg#camera-icon"></use> 
-             </svg>
-          </div>
-        
-           <div class="sidebar-menu-lines">
-             <hr class="line-1">
-             <hr class="line-2">
-             <hr class="line-3">
+          <div class="nav-left">
+            <!-- Logo -->
+            <div class="navbar-logo">
+              <a id="nav-logo" href="#">Focus.<span>Frame</span></a>
             </div>
-             
-          <!-- Menü -->
-          <ul class="navbar-links">
-            <li class="navbar-link"><a href="#about">ABOUT US</a></li>
-            <li class="navbar-link"><a href="#courses">OUR COURSES</a></li>
-            <li class="navbar-link"><a href="#mentors">OUR MENTORS</a></li>
-            <li class="navbar-link"><a href="#reviews">REVIEWS</a></li>
-            <li class="navbar-link"><a href="#contacts">CONTACTS</a></li>
-          </ul>
 
+            <div class="icon">
+              <svg class="camera-icon-svg">
+                <use href="./img/symbol-defs.svg#camera-icon"></use>
+              </svg>
+            </div>
+            <!-- Navbar Menü -->
+            <ul class="navbar-links">
+              <li class="navbar-link"><a href="#about">ABOUT US</a></li>
+              <li class="navbar-link"><a href="#courses">OUR COURSES</a></li>
+              <li class="navbar-link"><a href="#mentors">OUR MENTORS</a></li>
+              <li class="navbar-link"><a href="#reviews">REVIEWS</a></li>
+              <li class="navbar-link"><a href="#contacts">CONTACTS</a></li>
+            </ul>
+
+            <input type="checkbox" id="mobile-menu-toggle" hidden />
+            <label for="mobile-menu-toggle" class="menu-label">
+              <svg class="nav-icon">
+                <use href="./img/symbol-defs.svg#nav-icon"></use>
+              </svg>
+            </label>
+
+            <!-- Menü -->
+            <div class="modal-menu">
+              <ul class="sidebar-links">
+                <label for="mobile-menu-toggle">
+                  <svg class="close-menu">
+                    <use href="./img/symbol-defs.svg#x-icon"></use>
+                  </svg>
+                </label>
+                <li class="sidebar-link"><a href="#about">ABOUT US</a></li>
+                <li class="sidebar-link"><a href="#courses">OUR COURSES</a></li>
+                <li class="sidebar-link"><a href="#mentors">OUR MENTORS</a></li>
+                <li class="sidebar-link"><a href="#reviews">REVIEWS</a></li>
+                <li class="sidebar-link"><a href="#contacts">CONTACTS</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="sign-up-button">
+            <button type="submit" class="btn">SIGN UP</button>
+          </div>
         </nav>
       </header>
+    </div>
   </body>
 </html>
