@@ -5,126 +5,179 @@
     <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoIT Rookies</title>
-    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-Cncrw3ay.css">
+    <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-CD3eGKn8.css">
   </head>
   <body>
     <div class="container">
+      <!-- Navbar Bölümü -->
       <header class="section header-section">
         <nav class="navbar-section">
-          <!-- Logo -->
-          <svg class="navbar-logo">
-            <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#favicon"></use>
-          </svg>
-          <div class="navbar-icons">
-            <svg>
-              <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#camera-icon"></use>
-            </svg>
-            <div class="navbar-burger-icon">Çizgiler</div>
-          </div>
+          <div class="nav-left">
+            <!-- Logo -->
+            <div class="navbar-logo">
+              <a class="nav-logo" href="#">
+                <svg>
+                  <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#favicon"></use>
+                </svg>
+              </a>
+            </div>
 
-          <!-- Sidebar Menü -->
-          <div class="sidebar-menu">
-            <svg>
-              <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#x-icon"></use>
-            </svg>
+            <div class="navbar-camera-icon">
+              <svg>
+                <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#camera-icon"></use>
+              </svg>
+            </div>
 
-            <ul class="sidebar-links">
-              <li class="sidebar-link"><a href="#">ABOUT US</a></li>
-              <li class="sidebar-link"><a href="#">OUR COURSES</a></li>
-              <li class="sidebar-link"><a href="#">OUR MENTORS</a></li>
-              <li class="sidebar-link"><a href="#">REVIEWS</a></li>
-              <li class="sidebar-link"><a href="#">CONTACTS</a></li>
+            <input type="checkbox" id="mobile-menu-toggle" hidden />
+            <label for="mobile-menu-toggle" class="menu-label">
+              <svg class="nav-icon">
+                <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#nav-icon"></use>
+              </svg>
+            </label>
+
+            <!-- Sidebar Menü -->
+            <div class="modal-menu">
+              <ul class="sidebar-links">
+                <label for="mobile-menu-toggle">
+                  <svg class="close-menu">
+                    <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#x-icon"></use>
+                  </svg>
+                </label>
+                <li class="sidebar-link"><a href="#about">ABOUT US</a></li>
+                <li class="sidebar-link"><a href="#courses">OUR COURSES</a></li>
+                <li class="sidebar-link"><a href="#mentors">OUR MENTORS</a></li>
+                <li class="sidebar-link"><a href="#reviews">REVIEWS</a></li>
+                <li class="sidebar-link"><a href="#contacts">CONTACTS</a></li>
+              </ul>
+
+              <img
+                src="/vanilla-app-template/assets/photolens-D0uHXr3L.jpg"
+                srcset="/vanilla-app-template/assets/photolens-D0uHXr3L.jpg 1x, /vanilla-app-template/assets/photolens@2x-6RZKLVoP.jpg 2x"
+                alt="Sidebar Camera"
+              />
+            </div>
+
+            <!-- Navbar Menü -->
+            <ul class="navbar-links">
+              <li class="navbar-link"><a href="#about">ABOUT US</a></li>
+              <li class="navbar-link"><a href="#courses">OUR COURSES</a></li>
+              <li class="navbar-link"><a href="#mentors">OUR MENTORS</a></li>
+              <li class="navbar-link"><a href="#reviews">REVIEWS</a></li>
+              <li class="navbar-link"><a href="#contacts">CONTACTS</a></li>
             </ul>
           </div>
-
-          <!-- Buton -->
-          <div class="sign-up-button">
+          <div class="navbar-sign-up-button">
             <button type="submit" class="btn">SIGN UP</button>
           </div>
-
-          <!-- Navbar Menü -->
-          <ul class="navbar-links">
-            <li class="navbar-link"><a href="#">ABOUT US</a></li>
-            <li class="navbar-link"><a href="#">OUR COURSES</a></li>
-            <li class="navbar-link"><a href="#">OUR MENTORS</a></li>
-            <li class="navbar-link"><a href="#">REVIEWS</a></li>
-            <li class="navbar-link"><a href="#">CONTACTS</a></li>
-          </ul>
         </nav>
       </header>
+    </div>
+    <div class="container">
       <main>
+        <!-- Hero Section Bölümü -->
         <section class="section hero-section">
-          <div class="hero-content">
-            <h1>
-              Discover the magic of
-              <span class="highlight">photography</span> in our school
-            </h1>
-            <p class="hero-desc">
-              Our photography school offers an unforgettable journey, where you
-              can learn the basics of composition, master technical skills,
-              translate your unique ideas.
-            </p>
-
-            <div class="hero-stats">
-              <!-- Öğrenciler kısmı -->
-              <div class="hero-students">
-                <img
-                  srcset="/vanilla-app-template/assets/caitlyn-BJ_L0_Z-.png 1x, /vanilla-app-template/assets/caitlyn@2x-B_jNdA2w.png 2x"
-                  src="/vanilla-app-template/assets/caitlyn-BJ_L0_Z-.png"
-                  alt="student photo"
-                  class="student-img"
-                />
-                <img
-                  srcset="/vanilla-app-template/assets/jordan-BtQlH-la.png 1x, /vanilla-app-template/assets/jordan@2x-Cd8iafR5.png 2x"
-                  src="/vanilla-app-template/assets/jordan-BtQlH-la.png"
-                  alt="student photo"
-                  class="student-img"
-                />
-                <img
-                  srcset="/vanilla-app-template/assets/adriana-CtYyITd2.png 1x, /vanilla-app-template/assets/adriana@2x-DFIhGKGU.png 2x"
-                  src="/vanilla-app-template/assets/adriana-CtYyITd2.png"
-                  alt="student photo"
-                  class="student-img"
-                />
-                <a href="#rewievs"
-                  >Our happy students
-                  <svg>
-                    <use
-                      href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#arrow-right-icon"
-                    ></use>
-                  </svg>
-                </a>
+          <div class="hero-background">
+            <div class="hero-content">
+              <div class="hero-header">
+                <h1>
+                  Discover the magic of
+                  <span class="highlight">photography</span> in our school
+                </h1>
+                <p class="hero-desc">
+                  Our photography school offers an unforgettable journey, where
+                  you can learn the basics of composition, master technical
+                  skills, translate your unique ideas.
+                </p>
               </div>
 
-              <!-- Reviews kısmı -->
-              <div class="hero-reviews">
-                <svg>
-                  <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                </svg>
-                <span>Reviews<br /><strong>+1500</strong></span>
+              <div class="hero-stats">
+                <!-- Öğrenciler kısmı -->
+                <div class="hero-student-review">
+                  <div class="hero-students">
+                    <ul class="hero-icons">
+                      <li class="hero-icon">
+                        <img
+                          srcset="/vanilla-app-template/assets/caitlyn-BJ_L0_Z-.png 1x, /vanilla-app-template/assets/caitlyn@2x-B_jNdA2w.png 2x"
+                          src="/vanilla-app-template/assets/caitlyn-BJ_L0_Z-.png"
+                          alt="student photo"
+                          class="student-img"
+                        />
+                      </li>
+                      <li class="hero-icon">
+                        <img
+                          srcset="/vanilla-app-template/assets/jordan-BtQlH-la.png 1x, /vanilla-app-template/assets/jordan@2x-Cd8iafR5.png 2x"
+                          src="/vanilla-app-template/assets/jordan-BtQlH-la.png"
+                          alt="student photo"
+                          class="student-img"
+                        />
+                      </li>
+                      <li class="hero-icon">
+                        <img
+                          srcset="/vanilla-app-template/assets/adriana-CtYyITd2.png 1x, /vanilla-app-template/assets/adriana@2x-DFIhGKGU.png 2x"
+                          src="/vanilla-app-template/assets/adriana-CtYyITd2.png"
+                          alt="student photo"
+                          class="student-img"
+                        />
+                      </li>
+                    </ul>
+
+                    <a href="#">
+                      Our happy students
+                      <svg>
+                        <use
+                          href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#arrow-right-icon"
+                        ></use>
+                      </svg>
+                    </a>
+                  </div>
+
+                  <!-- Reviews kısmı -->
+                  <div class="hero-reviews">
+                    <svg>
+                      <use
+                        href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#hero-star-icon"
+                      ></use>
+                    </svg>
+                    <div class="hero-reviews-desc">
+                      <p>Reviews</p>
+                      <p><strong>+1500</strong></p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Sağ taraftaki ana görsel -->
-          <div class="hero-image">
-            <img
-              srcset="/vanilla-app-template/assets/heroboy-C2WJQj_t.png 1x, /vanilla-app-template/assets/heroboy@2x-DMw5CwEF.png 2x"
-              src="/vanilla-app-template/assets/heroboy-C2WJQj_t.png"
-              alt="Photographer with camera"
-            />
+            <!-- Sağ taraftaki ana görsel -->
+            <div class="hero-image">
+              <img
+                srcset="/vanilla-app-template/assets/heroboy-C2WJQj_t.png 1x, /vanilla-app-template/assets/heroboy@2x-DMw5CwEF.png 2x"
+                src="/vanilla-app-template/assets/heroboy-C2WJQj_t.png"
+                alt="Photographer with camera"
+              />
+            </div>
           </div>
         </section>
 
         <!-- Advertisement Bölümü -->
         <section class="section advertisement-section">
+          <div class="advertisement-line">
+            <svg>
+              <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#line-icon"></use>
+            </svg>
+          </div>
           <div class="advertisement">
             <h2>Master <span>your photography</span> skills with us!</h2>
+            <h2>Master <span>your photography</span> skills with us!</h2>
+          </div>
+          <div class="advertisement-line">
+            <svg>
+              <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#line-icon"></use>
+            </svg>
           </div>
         </section>
 
         <!-- About Us Bölümü -->
-        <section class="section about-us">
+        <section class="section about-us-section">
           <!-- About Us Başlık -->
           <h2 class="about-us-title section-title">
             About <span class="section-title-colored">Us</span>
@@ -132,27 +185,32 @@
 
           <!-- About Us Resim ve İçerik -->
           <div class="about-us-content">
-            <img
-              srcset="/vanilla-app-template/assets/photolens-D0uHXr3L.jpg 1x, /vanilla-app-template/assets/photolens@2x-6RZKLVoP.jpg 2x"
-              src="/vanilla-app-template/assets/photolens-D0uHXr3L.jpg"
-              alt="Angular Camera"
-            />
-            <p>
-              Our photography school is designed to teach you everything you
-              need to know about this magical art. Regardless of your experience
-              or skill level, we offer a wide range of courses to suit your
-              needs and interests. Our teaching team consists of experienced
-              photographers who have many years of experience in this field.
-              They strive not only to share their knowledge, but also to inspire
-              you to develop and express your unique creativity.
-            </p>
-            <p>
-              Our courses cover a wide range of topics, from the basics of
-              photography and equipment use to professional image processing and
-              creating impressive compositions. You will have the opportunity to
-              learn the technical aspects of photography, discover your own
-              style and develop your own visual language.
-            </p>
+            <div class="frame">
+              <img
+                srcset="/vanilla-app-template/assets/photolens_rectangle-V_lu5rqy.png 1x, /vanilla-app-template/assets/photolens_rectangle@2x-DwkkiNzf.png 2x"
+                src="/vanilla-app-template/assets/photolens_rectangle-V_lu5rqy.png"
+                alt="Angular Camera"
+              />
+            </div>
+            <div class="about-us-text">
+              <p>
+                Our photography school is designed to teach you everything you
+                need to know about this magical art. Regardless of your
+                experience or skill level, we offer a wide range of courses to
+                suit your needs and interests. Our teaching team consists of
+                experienced photographers who have many years of experience in
+                this field. They strive not only to share their knowledge, but
+                also to inspire you to develop and express your unique
+                creativity.
+              </p>
+              <p>
+                Our courses cover a wide range of topics, from the basics of
+                photography and equipment use to professional image processing
+                and creating impressive compositions. You will have the
+                opportunity to learn the technical aspects of photography,
+                discover your own style and develop your own visual language.
+              </p>
+            </div>
           </div>
         </section>
 
@@ -171,70 +229,62 @@
             </p>
           </div>
           <!-- Our Courses Card Yapısı -->
-          <div class="our-courses-content">
-            <ul class="our-courses-cards">
-              <li class="our-courses-card">
-                <div class="our-courses-card-header">
-                  <p>01</p>
-                  <svg>
-                    <use
-                      href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#arrow-diagonal-icon"
-                    ></use>
-                  </svg>
-                </div>
-                <div class="our-courses-card-title">
-                  <h2>Basics of photography</h2>
-                </div>
-                <div class="our-courses-card-desc">
-                  <p>
-                    During this course, you will be able to familiarize yourself
-                    with different types of cameras, learn the basics of
-                    composition.
-                  </p>
-                </div>
-              </li>
-              <li class="our-courses-card">
-                <div class="our-courses-card-header">
-                  <p>02</p>
-                  <svg>
-                    <use
-                      href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#arrow-diagonal-icon"
-                    ></use>
-                  </svg>
-                </div>
-                <div class="our-courses-card-title">
-                  <h2>Landscape photography</h2>
-                </div>
-                <div class="our-courses-card-desc">
-                  <p>
-                    In this course, you'll learn how to choose the right angles,
-                    frame landscapes, and create depth and perspective in your
-                    images.
-                  </p>
-                </div>
-              </li>
-              <li class="our-courses-card">
-                <div class="our-courses-card-header">
-                  <p>03</p>
-                  <svg>
-                    <use
-                      href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#arrow-diagonal-icon"
-                    ></use>
-                  </svg>
-                </div>
-                <div class="our-courses-card-title">
-                  <h2>Portrait photography</h2>
-                </div>
-                <div class="our-courses-card-desc">
-                  <p>
-                    During this course, you will learn to choose the right
-                    lighting, reproduce the mood and expressions on the faces of
-                    the models.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <ul class="our-courses-cards">
+            <li class="our-courses-card">
+              <div class="our-courses-card-header">
+                <p>01</p>
+                <svg>
+                  <use
+                    href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#arrow-diagonal-icon"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-courses-card-content">
+                <h2>Basics of photography</h2>
+                <p>
+                  During this course, you will be able to familiarize yourself
+                  with different types of cameras, learn the basics of
+                  composition.
+                </p>
+              </div>
+            </li>
+            <li class="our-courses-card">
+              <div class="our-courses-card-header">
+                <p>02</p>
+                <svg>
+                  <use
+                    href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#arrow-diagonal-icon"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-courses-card-content">
+                <h2>Landscape photography</h2>
+                <p>
+                  In this course, you'll learn how to choose the right angles,
+                  frame landscapes, and create depth and perspective in your
+                  images.
+                </p>
+              </div>
+            </li>
+            <li class="our-courses-card">
+              <div class="our-courses-card-header">
+                <p>03</p>
+                <svg>
+                  <use
+                    href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#arrow-diagonal-icon"
+                  ></use>
+                </svg>
+              </div>
+              <div class="our-courses-card-content">
+                <h2>Portrait photography</h2>
+                <p>
+                  During this course, you will learn to choose the right
+                  lighting, reproduce the mood and expressions on the faces of
+                  the models.
+                </p>
+              </div>
+            </li>
+          </ul>
         </section>
 
         <section class="section our-mentors">
@@ -251,8 +301,10 @@
                 src="/vanilla-app-template/assets/emilia--qsPSqK6.png"
                 alt="Emilia-Smith"
               />
-              <h4>Emilia Smith</h4>
-              <p>1.5 years of experience</p>
+              <div class="our-mentor-card-content">
+                <h4>Emilia Smith</h4>
+                <p>1.5 years of experience</p>
+              </div>
             </li>
             <li class="our-mentor-card">
               <img
@@ -260,8 +312,10 @@
                 src="/vanilla-app-template/assets/alex-D9D1Tt9Q.png"
                 alt="Alex-Lebedev"
               />
-              <h4>Alex Lebedev</h4>
-              <p>3.5 years of experience</p>
+              <div class="our-mentor-card-content">
+                <h4>Alex Lebedev</h4>
+                <p>3.5 years of experience</p>
+              </div>
             </li>
             <li class="our-mentor-card">
               <img
@@ -269,8 +323,10 @@
                 src="/vanilla-app-template/assets/mia-Ciq0hxP1.png"
                 alt="Mia-Dubrovska"
               />
-              <h4>Mia Dubrovska</h4>
-              <p>2.0 years of experience</p>
+              <div class="our-mentor-card-content">
+                <h4>Mia Dubrovska</h4>
+                <p>2.0 years of experience</p>
+              </div>
             </li>
             <li class="our-mentor-card">
               <img
@@ -278,105 +334,10 @@
                 src="/vanilla-app-template/assets/eliot-C2yGCZEH.png"
                 alt="Eliot-Kovalev"
               />
-              <h4>Eliot Kovalev</h4>
-              <p>4.0 years of experience</p>
-            </li>
-          </ul>
-        </section>
-
-        <section class="section reviews-section">
-          <!-- Reviews Başlık -->
-          <h2 class="review-title">Reviews</h2>
-
-          <!-- Reviews Card Yapısı -->
-          <ul class="review-list">
-            <li class="review-list-item">
-              <img
-                srcset="/vanilla-app-template/assets/user_abraham-COW7BOyG.png 1x, /vanilla-app-template/assets/user_abraham@2x-D0sXEDwu.png 2x"
-                src="/src/img/user_abraham.png"
-                alt="Abraham-Baker"
-              />
-              <h3>Abraham Baker</h3>
-              <p>Student</p>
-              <ul class="review-star-list">
-                <!-- Yıldız iconları yer alacak -->
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p class="review-description">
-                I am very pleased that I decided to enroll in photography
-                school. The teachers turned out to be very talented and
-                experienced professionals who share their knowledge and are
-                dedicated to their work. I was able to expand my skills and
-                discover my own style.
-              </p>
-            </li>
-            <li class="review-list-item">
-              <img
-                srcset="/vanilla-app-template/assets/user_amanda-BBh2pQOl.png 1x, /vanilla-app-template/assets/user_amanda@2x-BQCKoZm5.png 2x"
-                src="/src/img/user_amanda.png"
-                alt="Amanda-Lowery"
-              />
-              <h3>Abraham Baker</h3>
-              <p>Student</p>
-              <ul class="review-star-list">
-                <!-- Yıldız iconları yer alacak -->
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-                <li class="review-star">
-                  <svg>
-                    <use href="/vanilla-app-template/assets/symbol-defs-Dkew3hOg.svg#star-icon"></use>
-                  </svg>
-                </li>
-              </ul>
-              <p class="review-description">
-                I am very pleased that I decided to enroll in photography
-                school. The teachers turned out to be very talented and
-                experienced professionals who share their knowledge and are
-                dedicated to their work. I was able to expand my skills and
-                discover my own style.
-              </p>
+              <div class="our-mentor-card-content">
+                <h4>Eliot Kovalev</h4>
+                <p>4.0 years of experience</p>
+              </div>
             </li>
           </ul>
         </section>
@@ -384,15 +345,15 @@
         <section class="section sign-up-section">
           <div class="sign-up-content">
             <!-- Sign Up Başlık -->
-            <h2 class="sign-up-title">
-              Sign <span class="section-title-colored">Up</span>
-            </h2>
+            <div class="sign-up-title">
+              <h2>Sign <span class="section-title-colored">Up</span></h2>
 
-            <!-- Sign Up Alt Başlık -->
-            <p>
-              Please use the form below to contact us. Enter your name, email,
-              and message and we'll get back to you shortly.
-            </p>
+              <!-- Sign Up Alt Başlık -->
+              <p>
+                Please use the form below to contact us. Enter your name, email,
+                and message and we'll get back to you shortly.
+              </p>
+            </div>
 
             <!-- Sign Up Form Yapısı -->
             <form class="sign-up-form">
@@ -402,6 +363,7 @@
                   pattern="[A-Za-z]"
                   id="sign-up-name"
                   name="name"
+                  placeholder="Enter your name"
                   required
                 />
               </label>
@@ -411,6 +373,7 @@
                   pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
                   id="sign-up-mail"
                   name="email"
+                  placeholder="Enter your email"
                   required
                 />
               </label>
@@ -419,16 +382,19 @@
                   id="sign-up-message"
                   name="message"
                   placeholder="Message"
-                  rows="5"
+                  rows="6"
                   required
                 ></textarea>
               </label>
             </form>
-            <button class="sign-up-button" type="submit">Send</button>
-            <p class="sign-up-form-permission">
-              By clicking on “Send” button, you agree to our Privacy Policy, and
-              allow Promodo to use this information for marketing purposes.
-            </p>
+            <div class="sign-up-desc">
+              <button class="sign-up-button" type="submit">Send</button>
+              <p class="sign-up-form-policy">
+                By clicking on “Send” button, you agree to our
+                <a href="#" class="sing-up-policy">Privacy Policy</a>, and allow
+                Promodo to use this information for marketing purposes.
+              </p>
+            </div>
           </div>
           <div class="sign-up-img">
             <img
@@ -443,76 +409,153 @@
             />
           </div>
         </section>
-      </main>
 
+        <section class="section reviews-section">
+          <!-- Reviews Başlık -->
+          <h2 class="review-title">Reviews</h2>
+
+          <!-- Reviews Card Yapısı -->
+          <ul class="review-list">
+            <li class="review-list-item">
+              <div class="review-item-div">
+                <img
+                  srcset="/vanilla-app-template/assets/user_abraham-COW7BOyG.png 1x, /vanilla-app-template/assets/user_abraham@2x-D0sXEDwu.png 2x"
+                  src="/vanilla-app-template/assets/user_abraham-COW7BOyG.png"
+                  alt="Abraham-Baker"
+                />
+                <div>
+                  <h3>Abraham Baker</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+              <!-- Yıldız iconları yer alacak -->
+              <div class="review-star">
+                <svg>
+                  <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#reviews-star-icon"></use>
+                </svg>
+              </div>
+              <p class="review-desc">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
+            <li class="review-list-item">
+              <div class="review-item-div">
+                <img
+                  srcset="/vanilla-app-template/assets/user_amanda-BBh2pQOl.png 1x, /vanilla-app-template/assets/user_amanda@2x-BQCKoZm5.png 2x"
+                  src="/vanilla-app-template/assets/user_amanda-BBh2pQOl.png"
+                  alt="Amanda-Lowery"
+                />
+                <div>
+                  <h3>Amanda Lowery</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+              <!-- Yıldız iconları yer alacak -->
+              <div class="review-star">
+                <svg>
+                  <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#reviews-star-icon"></use>
+                </svg>
+              </div>
+              <p class="review-desc">
+                I am very pleased that I decided to enroll in photography
+                school. The teachers turned out to be very talented and
+                experienced professionals who share their knowledge and are
+                dedicated to their work. I was able to expand my skills and
+                discover my own style.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+    <div class="container">
       <!-- Footer -->
       <footer class="section footer-section">
-        <div class="container footer-content">
-          <!-- Logo -->
-          <div class="footer-brand">
-            <a href="/" class="footer-logo">
-              <!-- <img src="logo.png" alt="Şirket Logosu"> -->
-              <span class="footer-logo-text">LOGO</span>
-            </a>
-          </div>
+        <div class="footer-content">
+          <div>
+            <div>
+              <!-- Logo -->
+              <div class="footer-top">
+                <div class="footer-brand">
+                  <svg class="footer-logo" width="123" height="16">
+                    <use href="/vanilla-app-template/assets/symbol-defs-AUB-4Glr.svg#favicon"></use>
+                  </svg>
+                </div>
+              </div>
 
-          <!-- İrtibat bilgisi -->
-          <address class="footer-contacts">
-            <a href="tel:+380665438912">+38 066 543 8912</a>
-            <a href="">1678 S. Pionner Road Salt Lake City UT 84104</a>
-          </address>
-
-          <div class="footer-navbar">
-            <!-- Sosyal Medya -->
-            <div class="footer-social">
-              <ul class="footer-social-lists">
-                <li class="footer-social-list">
-                  <a
-                    href="https://www.instagram.com/goit.turkiye/"
-                    target="_blank"
-                    >INSTAGRAM</a
-                  >
-                </li>
-                <li class="footer-social-list">
-                  <a href="https://m.youtube.com/@GoITTurkey" target="_blank"
-                    >YOUTUBE</a
-                  >
-                </li>
-                <li class="footer-social-list">
-                  <a
-                    href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
-                    target="_blank"
-                    >FACEBOOK</a
-                  >
-                </li>
-              </ul>
+              <!-- İrtibat bilgisi -->
+              <address class="footer-contacts">
+                <a href="tel:+380665438912" target="_blank">+38 066 543 8912</a>
+                <a
+                  href="https://www.google.com/maps/place/Varex+Imaging+Visitor+Entrance/@40.7332053,-111.9591313,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35bbcfb1369:0x260ab4842496c9e4!8m2!3d40.7332053!4d-111.9591313!16s%2Fg%2F1tcxvqmt?entry=ttu&g_ep=EgoyMDI1MDkxNi4wIKXMDSoASAFQAw%3D%3D"
+                  target="_blank"
+                  >1678 S. Pionner Road Salt Lake City UT 84104</a
+                >
+              </address>
             </div>
 
-            <!-- Site Bağlantı Listesi -->
-            <div class="footer-list">
-              <ul class="footer-links">
-                <li class="footer-link"><a href="">ABOUT US</a></li>
-                <li class="footer-link"><a href="">OUR COURSES</a></li>
-                <li class="footer-link"><a href="">OUR MENTORS</a></li>
-                <li class="footer-link"><a href="">REVIEWS</a></li>
-                <li class="footer-link"><a href="">CONTACTS</a></li>
-              </ul>
+            <div class="all">
+              <div class="footer-navbar">
+                <!-- Sosyal Medya -->
+                <div class="footer-social">
+                  <ul class="footer-social-lists">
+                    <li class="footer-social-list">
+                      <a
+                        href="https://www.instagram.com/goit.turkiye/"
+                        target="_blank"
+                        >INSTAGRAM</a
+                      >
+                    </li>
+                    <li class="footer-social-list">
+                      <a
+                        href="https://m.youtube.com/@GoITTurkey"
+                        target="_blank"
+                        >YOUTUBE</a
+                      >
+                    </li>
+                    <li class="footer-social-list">
+                      <a
+                        href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/"
+                        target="_blank"
+                        >FACEBOOK</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Site Bağlantı Listesi -->
+                <div class="footer-list">
+                  <ul class="footer-links">
+                    <li class="footer-link"><a href="">ABOUT US</a></li>
+                    <li class="footer-link"><a href="">OUR COURSES</a></li>
+                    <li class="footer-link"><a href="">OUR MENTORS</a></li>
+                    <li class="footer-link"><a href="">REVIEWS</a></li>
+                    <li class="footer-link"><a href="">CONTACTS</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="footer-kapsayici2">
+                <!-- Form -->
+                <form class="footer-form">
+                  <label>
+                    <input
+                      id="footer-email"
+                      type="email"
+                      name="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </label>
+                  <button class="footer-form-button" type="submit">Go</button>
+                </form>
+              </div>
             </div>
           </div>
-
-          <!-- Form -->
-          <form class="footer-form">
-            <label>
-              <input
-                id="footer-email"
-                type="email"
-                name="email"
-                placeholder="Enter your email"
-                required
-              />
-            </label>
-          </form>
-          <button class="footer-form-button" type="submit">Go</button>
 
           <div class="footer-bottom">
             <div class="footer-left">
