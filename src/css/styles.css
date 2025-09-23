@@ -906,6 +906,12 @@ a {
 
 /* FOOTER SECTION END */
 
+@media (min-resolution: 2px) {
+  .modal-menu img {
+    background-image: url("../img/photolens@2x.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -947,10 +953,17 @@ a {
   }
 
   .modal-menu {
-    position: absolute;
-    right: -300px;
+    min-width: 480px;
+    max-height: 1024px;
+    right: -232px;
     top: 0;
   }
+
+  .modal-menu img {
+    display: block;
+    width: 100%;
+  }
+
   .navbar-sign-up-button .btn {
     width: 187px;
     height: 60px;
@@ -972,20 +985,22 @@ a {
     color: var(--brown-color);
   }
 
-  .modal-menu {
-    background: var(--brown-color);
+  .sidebar-links {
+    display: flex;
+    gap: 28px;
   }
 
-  .sidebar-links {
-    max-width: 480px;
-    max-height: 1024px;
+  .sidebar-links label svg {
     position: absolute;
-    right: 319px;
-    top: 232px;
+    top: 20px;
+    right: 32px;
+    width: 40px;
+    height: 40px;
   }
 
   .sidebar-links a {
     position: relative;
+    top: 132px;
     left: 64px;
   }
 
@@ -994,7 +1009,51 @@ a {
   }
 
   /* NAVBAR SECTION END */
+
   /* HERO SECTION START */
+
+  .hero-section {
+    padding: 0;
+  }
+
+  .hero-content {
+    display: flex;
+    max-width: 557px;
+  }
+
+  .hero-header {
+    max-width: 400px;
+  }
+
+  .hero-stats {
+    max-width: 390px;
+    align-items: center;
+  }
+
+  .hero-students {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .hero-students a {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .hero-student-review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hero-reviews-desc {
+    display: flex;
+    gap: 8px;
+  }
+
   /* HERO SECTION END */
 
   /* ADVERTISEMENT SECTION START */
@@ -1186,8 +1245,8 @@ a {
     gap: 48px;
   }
 
-  .footer-content div:last-child {
-    gap: 40px;
+  .footer-content {
+    row-gap: 75px;
   }
 
   .footer-top {
@@ -1206,17 +1265,11 @@ a {
 
   .all {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    gap: 20px;
+    gap: 59px;
   }
 
   .footer-kapsayici {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 40px;
   }
 
   .footer-kapsayici2 {
@@ -1225,10 +1278,12 @@ a {
     align-items: flex-start;
   }
 
+  .footer-form {
+    margin: 0;
+  }
+
   .footer-navbar {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
+    column-gap: 25px;
   }
 
   .footer-social-lists {
