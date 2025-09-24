@@ -10,7 +10,6 @@ export default defineConfig(({ command }) => {
     define: {
       [command === "serve" ? "global" : "_global"]: {},
     },
-    root: "src", // Bu satırı koru, ama input glob'unu düzelt
     build: {
       sourcemap: true,
       rollupOptions: {
