@@ -592,6 +592,17 @@ a {
   color: var(--card-p-color);
 }
 
+.our-courses-svg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50% 50%;
+  background-color: var(--smoke-color);
+}
+
+.our-courses-svg:hover {
+  background-color: var(--brown-color);
+}
+
 .our-courses-card svg {
   width: 32px;
   height: 32px;
@@ -601,7 +612,6 @@ a {
 
 .our-courses-card svg:hover {
   color: var(--white-color);
-  stroke: var(--brown-color);
 }
 
 /* OUR COURSES SECTION END */
