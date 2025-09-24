@@ -7,10 +7,11 @@ import SortCss from 'postcss-sort-media-queries';
 export default defineConfig(({ command }) => {
   return {
     base: '/goit-rookies-project/',
+    root: 'src',
+    publicDir: '../public',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
-    root: 'src',
     build: {
       sourcemap: true,
       rollupOptions: {
