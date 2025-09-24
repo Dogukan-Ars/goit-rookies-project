@@ -69,6 +69,15 @@ a {
   color: var(--white-color);
 }
 
+.section-title {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 114%;
+  letter-spacing: -0.04em;
+  color: var(--white);
+}
+
 .section-title-colored {
   color: var(--brown-color);
 }
@@ -76,6 +85,8 @@ a {
 .container {
   max-width: 375px;
   margin: 0 auto;
+  background-image: url("../img/graphic-header-desktop-big.png");
+  background-repeat: no-repeat;
 }
 
 .section {
@@ -92,6 +103,7 @@ a {
 
 .navbar-section {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 15px 20px;
   position: relative;
@@ -112,15 +124,44 @@ a {
   height: 20px;
 }
 
-.navbar-camera-icon {
+.nav-right-icons {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-camera-icon {
+  position: relative;
 }
 
 .navbar-camera-icon svg {
+  display: block;
   width: 32px;
   height: 32px;
   border-radius: 50%;
+}
+
+.navbar-camera-icon svg {
+  color: rgba(190, 166, 158, 0.4);
+}
+
+.navbar-camera-icon:hover svg:nth-child(1) {
+  color: var(--brown-color);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.4);
+  z-index: 1;
+}
+
+#mobile-menu-toggle:checked ~ .modal-overlay {
+  display: block;
 }
 
 .modal-menu {
@@ -128,7 +169,7 @@ a {
   position: absolute;
   top: -20px;
   right: -20px;
-  z-index: 2;
+  z-index: 3;
   background-color: var(--brown-color);
 }
 
@@ -138,6 +179,11 @@ a {
 
 #mobile-menu-toggle:checked ~ .modal-menu {
   display: block;
+}
+
+#mobile-menu-toggle:checked .container {
+  background-color: #060707;
+  backdrop-filter: var(--black-color);
 }
 
 #mobile-menu-toggle:checked ~ .modal-menu .sidebar-links {
@@ -199,6 +245,7 @@ a {
   width: 30px;
   height: 30px;
   cursor: pointer;
+  fill: var(--white-color);
 }
 
 .navbar-sign-up-button {
@@ -436,6 +483,7 @@ a {
 /* ADVERTISEMENT SECTION END */
 
 /* ABOUT US SECTION START */
+
 /*Görsel*/
 .about-us-content img {
   width: 100%;
@@ -470,10 +518,6 @@ a {
   justify-content: center;
   flex-direction: column;
   gap: 40px;
-}
-
-.our-courses-title {
-  font-size: 28px;
 }
 
 .our-courses-header {
@@ -693,28 +737,7 @@ a {
   width: 540px;
   height: 540px;
 }
-.small-photo {
-  display: flex;
-  justify-content: center;
-  background-color: var(--brown-color);
-  border-radius: 1000px;
-  padding: 76px 19px 62px 19px;
-  margin-top: 252px;
-  margin-right: 20px;
-}
 
-.small-photo > img {
-  width: 150px;
-  height: 142px;
-}
-.big-photo {
-  width: 240px;
-  height: 296px;
-  background-color: var(--smoke-color);
-  border-radius: 1000px;
-  padding: 156px 50px 88px 50px;
-  background-size: cover;
-}
 .sing-up-policy {
   text-decoration: underline;
   text-decoration-skip-ink: none;
@@ -810,6 +833,12 @@ a {
 /* REVIEWS SECTION END */
 
 /* FOOTER SECTION START */
+.footer-container {
+  background-image: url("../img/graphic-footer-mobile.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -821,6 +850,18 @@ a {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+
+.footer-content .footer-first {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-content .footer-second {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .footer-top {
@@ -878,7 +919,6 @@ a {
   max-width: 267px;
   padding: 20px 119px 20px 18px;
   font-size: 16px;
-  opacity: 0.7;
   border-radius: 12px;
   border: none;
   color: var(--black-color);
@@ -904,6 +944,10 @@ a {
   font-size: 12px;
 }
 
+.footer-line {
+  height: 2px;
+}
+
 /* FOOTER SECTION END */
 
 @media (min-resolution: 2px) {
@@ -922,12 +966,24 @@ a {
     max-width: 704px;
   }
 
+  .section-title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.12;
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+  }
+
   /* NAVBAR SECTION START */
+
+  .header-section {
+    padding: 20px 0 40px 0;
+  }
 
   .navbar-section {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: space-between;
     padding: 0;
     gap: 14px;
     border: none;
@@ -950,13 +1006,13 @@ a {
 
   .navbar-sign-up-button {
     display: block;
+    min-width: fit-content;
   }
 
   .modal-menu {
     min-width: 480px;
     max-height: 1024px;
     right: -232px;
-    top: 0;
   }
 
   .modal-menu img {
@@ -965,14 +1021,16 @@ a {
   }
 
   .navbar-sign-up-button .btn {
-    width: 187px;
-    height: 60px;
+    padding: 16px 58px;
     color: var(--black-color);
     background: var(--white-color);
     border: none;
     border-radius: 12px;
     cursor: pointer;
     font-weight: bold;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.56;
     transition: 0.3s;
   }
 
@@ -1065,6 +1123,7 @@ a {
   /* ABOUT US SECTION START */
 
   .about-us-section {
+    padding: 50px 0;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -1110,11 +1169,6 @@ a {
     display: flex;
     flex-direction: row;
     gap: 8px;
-    font-weight: 500;
-    font-size: 48px;
-    line-height: 1.12;
-    letter-spacing: -0.04em;
-    text-transform: capitalize;
   }
   .our-courses-header p {
     font-size: 16px;
@@ -1156,12 +1210,15 @@ a {
   }
 
   .our-mentors-cards {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: 100px; /* yan yana kartlar arası sabit boşluk */
     row-gap: 93px; /* alt alta kartlar arası sabit boşluk */
-    align-items: flex-start;
+    align-items: end;
+    max-width: 488px;
+    margin: 0 auto;
   }
 
   .our-mentor-card {
@@ -1174,7 +1231,8 @@ a {
   /* SIGN UP SECTION START */
 
   .sign-up-section {
-    padding: 50px 0;
+    padding: 50px 32px;
+    justify-content: start;
     margin: 0;
   }
 
@@ -1185,6 +1243,12 @@ a {
 
   .sign-up-form {
     align-items: start;
+  }
+
+  #sign-up-name,
+  #sign-up-mail,
+  #sign-up-message {
+    min-width: 480px;
   }
 
   /* SIGN UP SECTION END */
@@ -1235,6 +1299,19 @@ a {
 
   /* FOOTER SECTION START */
 
+  .footer-container {
+    background-image: url("../img/graphic-footer-tablet.png");
+    background-repeat: repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .footer-container .footer-line {
+    min-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
   .footer-section {
     padding: 50px 0;
   }
@@ -1265,6 +1342,7 @@ a {
 
   .all {
     display: flex;
+    align-items: start;
     gap: 59px;
   }
 
@@ -1328,33 +1406,65 @@ a {
 @media (min-width: 1280px) {
   .container {
     max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .section {
+    max-width: 1080px;
+    padding: 75px 0;
+  }
+
+  .section-title {
+    font-size: 48px;
   }
 
   /* NAVBAR SECTION START */
+
+  .header-section {
+    padding: 20px 0;
+  }
+
   .menu-label {
     display: none;
   }
 
+  .nav-logo {
+    padding: 7px 0 7px 30px;
+  }
+
+  .nav-left {
+    max-width: 822px;
+    border: 1px solid var(--star-color);
+    border-radius: 12px;
+    gap: 20px;
+    flex-grow: 1;
+  }
+
   .navbar-links {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
+    gap: 28px;
     font-weight: 400;
     font-size: 14px;
-    margin-left: 80px;
+    flex-shrink: 1;
+  }
+
+  .navbar-link {
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+    white-space: nowrap;
   }
 
   .navbar-link a {
+    display: block;
     text-decoration: none;
     color: var(--white-color);
   }
 
   .navbar-section {
-    width: 1024px;
-    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1080px;
   }
 
   .icon {
@@ -1365,39 +1475,135 @@ a {
     width: 130px;
   }
 
-  .sign-up-button {
-    margin-left: -35px;
+  .navbar-sign-up-button {
+    display: flex;
+    align-items: center;
+    width: auto; /* Min-width yerine esnek genişlik */
+    max-width: 300px;
   }
+
+  .navbar-sign-up-button .btn {
+    padding: 16px 80px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.56;
+    width: 100%;
+  }
+
   /* NAVBAR SECTION END */
+
   /* HERO SECTION START */
+
+  .hero-background {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    width: 100%;
+    gap: 20px;
+  }
+
+  .hero-content {
+    display: flex;
+    gap: 136px;
+    padding: 50px 0 50px 50px;
+    min-width: 613px;
+  }
+
+  .hero-header {
+    width: 100%;
+  }
+
+  .hero-header h1 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.06;
+  }
+
+  .hero-image {
+    margin: 0;
+    padding: 80px 50px 0 0;
+  }
+
+  .hero-image img {
+    display: block;
+    width: 397px;
+    height: 520px;
+  }
+
   /* HERO SECTION END */
 
   /* ADVERTISEMENT SECTION START */
+
+  .advertisement h2 {
+    font-weight: 400;
+    font-size: 59px;
+    line-height: 108%;
+    letter-spacing: -0.02em;
+  }
+
   /* ADVERTISEMENT SECTION END */
 
   /* ABOUT US SECTION START */
+
   /*Desktop Görsel*/
   .about-us-content img {
-    max-height: 220px;
+    display: block;
+    width: 488px;
+    height: 260px;
   }
 
   /*Desktop Metin ve Görsel İçeriği*/
   .about-us-content {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 50px;
+    justify-content: end;
+    align-items: start;
+    gap: 40px;
+  }
+
+  .about-us-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+
+  .about-us-text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    letter-spacing: -0.02em;
   }
   /* ABOUT US SECTION END */
   /* OUR COURSES SECTION START */
 
-  .our-courses-header {
-    gap: 410px;
-    padding: 10px 100px;
+  .our-courses {
+    gap: 50px;
   }
+
+  .our-courses-header {
+    max-width: 1055px;
+    gap: 410px;
+  }
+
+  .our-courses-header p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   .our-courses-cards {
-    display: flex;
-    padding: auto 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .our-courses-card {
+    min-width: 347px;
+  }
+
+  .our-courses-card-content {
+    padding: 0 32px;
   }
 
   .our-courses-card-desc {
@@ -1410,87 +1616,434 @@ a {
 
   /* OUR MENTORS SECTION START */
   .our-mentors-cards {
-    flex-direction: row;
-    flex-wrap: nowrap; /* 4'ü 1 satırda görmek istiyoruz */
-    justify-content: center;
-    gap: 100px;
-    align-items: flex-start;
+    max-width: 1034px;
   }
 
   .our-mentor-card {
-    flex: 0 0 calc(25% - 75px);
-    max-width: calc(25% - 75px);
+    flex: 0 0 calc(25% - 79px);
+  }
+
+  .our-mentor-card:nth-child(3) {
+    align-items: start;
+    min-width: 194px;
+  }
+
+  .our-mentor-card-content {
+    gap: 4px;
+  }
+
+  .our-mentor-card-content h4 {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 114%;
+    text-align: center;
+  }
+
+  .our-mentor-card-content p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
+    letter-spacing: -0.02em;
   }
   /* OUR MENTORS SECTION END */
 
   /* SIGN UP SECTION START */
+
+  .sign-up-section {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sign-up-content {
+    max-height: 578px;
+    gap: 40px;
+  }
+
+  .sign-up-title {
+    padding: 0;
+  }
+
+  .sign-up-form {
+    max-width: 480px;
+  }
+
+  #sign-up-name,
+  #sign-up-mail,
+  #sign-up-message {
+    padding: 20px 18px;
+    min-width: 480px;
+    resize: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    border-radius: 12px;
+    border: 1px solid var(--star-color);
+    background-color: var(--black-color);
+  }
+
+  #sign-up-name:focus,
+  #sign-up-mail:focus,
+  #sign-up-message:focus {
+    border-color: var(--card-p-color);
+    color: var(--white-color);
+  }
+
+  .sign-up-button {
+    padding: 16px 216px;
+  }
+
+  .sign-up-desc {
+    gap: 20px;
+  }
+
+  .sign-up-desc p {
+    font-size: 14px;
+  }
+
+  .sign-up-img {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    max-height: 540px;
+    gap: 20px;
+  }
+
+  .small-photo-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    padding: 76px 19px 62px 19px;
+    width: 180px;
+    height: 288px;
+    border-radius: 1000px;
+    background-image: url("../img/small_photo@2x.png");
+    background: var(--brown-color);
+    background-size: cover;
+  }
+
+  .big-photo-div {
+    width: 340px;
+    height: 540px;
+    padding: 156px 50px 88px 50px;
+    background-image: url("../img/big_photo@2x.png");
+    border-radius: 1000px;
+    background: var(--smoke-color);
+    background-size: cover;
+  }
+
   /* SIGN UP SECTION END */
 
   /* REVIEWS SECTION START */
+
+  .review-list {
+    margin: 0;
+    border: none;
+    gap: 20px;
+  }
+
+  .review-list-item {
+    max-width: 530px;
+    padding: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    border-radius: 12px;
+    border: 1px solid var(--star-color);
+    animation: none;
+  }
+
+  .review-item-div {
+    padding: 0;
+  }
+
+  .review-item-div > div h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+  }
+
+  .review-star {
+    padding: 0;
+  }
+
+  .review-star > svg {
+    display: block;
+    width: 115px;
+    height: 19px;
+  }
+
+  .review-desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    padding: 20px 0;
+  }
+
   /* REVIEWS SECTION END */
 
   /* FOOTER SECTION START */
+
+  .footer-container {
+    background-image: url("../img/graphic-footer-desktop-small.png");
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  .footer-content {
+    gap: 50px;
+  }
+
+  .footer-contacts a {
+    min-width: 288px;
+  }
+
+  .all {
+    min-width: 651px;
+    gap: 135px;
+  }
+
+  .footer-section .footer-content .footer-first {
+    gap: 139px;
+  }
+
+  .footer-content div .footer-navbar {
+    gap: 50px;
+  }
+
+  .footer-navbar {
+    display: flex;
+    justify-content: end;
+    min-width: 224px;
+  }
+
+  .footer-navbar .footer-list {
+    font-size: 14px;
+    min-width: 97px;
+  }
+
+  .footer-navbar .footer-social-lists,
+  .footer-navbar .footer-links {
+    gap: 20px;
+  }
+
+  .footer-content div:last-child {
+    justify-content: space-between;
+  }
+
+  #footer-email {
+    min-width: 216px;
+    padding: 20px 78px 20px 18px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: none;
+    color: var(--black-color);
+  }
+
   /* FOOTER SECTION END */
 }
 
 @media (min-width: 1440px) {
   .container {
     max-width: 1440px;
+    margin: 0 auto;
   }
 
   .section {
+    max-width: 1240px;
     padding: 150px 100px;
   }
 
   /* NAVBAR SECTION START */
 
+  .header-section {
+    padding: 20px 0 0 0;
+  }
+
   .navbar-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
-    background-color: var(--black-color);
+    padding: 0;
+  }
+
+  .nav-left {
+    max-width: 982px;
+    padding: 22px 50px;
     border: 1px solid var(--star-color);
     border-radius: 12px;
-    width: 1280px;
+    gap: 159px;
+    flex-grow: 1;
+  }
+
+  .nav-right-icons {
+    display: none;
   }
 
   .navbar-links {
-    margin-left: 290px;
+    gap: 40px;
+  }
+
+  .navbar-sign-up-button .btn {
+    padding: 16px 84px;
+    min-width: max-content;
   }
 
   /* NAVBAR SECTION START */
 
+  /* HERO SECTION START */
+
+  .hero-section {
+    padding: 80px 0;
+  }
+
+  .hero-background {
+    justify-content: space-between;
+  }
+
+  .hero-content {
+    gap: 136px;
+  }
+
+  .hero-header {
+    min-width: fit-content;
+  }
+
+  .hero-image {
+    margin-right: 50px;
+  }
+
+  /* HERO SECTION END */
+
+  /* ADVERTISEMENT SECTION START */
+
+  .advertisement-section {
+    padding: 70px 0;
+  }
+
+  /* ADVERTISEMENT SECTION END */
+
+  /* ABOUT US SECTION START */
+
+  .about-us-section {
+    padding: 80px 0;
+  }
+
+  /*Desktop Görsel*/
+  .about-us-content img {
+    width: 560px;
+    height: 240px;
+  }
+
+  /*Desktop Metin ve Görsel İçeriği*/
+  .about-us-content {
+    align-items: center;
+    gap: 50px;
+  }
+
+  .about-us-text {
+    gap: 40px;
+  }
+  /* ABOUT US SECTION END */
+
+  /* OUR COURSES SECTION START */
+
+  .our-courses {
+    padding: 70px 0;
+  }
+
+  .our-courses-header {
+    max-width: 1215px;
+  }
+
+  .our-courses-card {
+    max-width: 400px;
+  }
+
+  .our-courses-card-content {
+    padding: 0;
+  }
+
+  /* OUR COURSES SECTION END */
+
   /* OUR MENTORS SECTION START */
 
+  .our-mentors {
+    padding: 80px 0;
+  }
+
   .our-mentors-cards {
-    gap: 100px;
+    display: flex;
+    max-width: 1034px;
   }
 
   .our-mentor-card {
-    flex: 0 0 calc(25% - 75px);
-    max-width: calc(25% - 75px);
+    flex: 0 0 calc(25% - 80px);
   }
 
   /* OUR MENTORS SECTION END */
 
+  /* SIGN UP SECTION START */
+
+  .sign-up-section {
+    padding: 70px 0;
+  }
+
+  /* SIGN UP SECTION END */
+
   /* REVIEWS SECTION START */
 
+  .reviews-section {
+    padding: 80px 0;
+  }
+
   .review-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     gap: 20px;
-    margin: 0;
   }
 
   .review-list-item {
-    position: relative;
-    left: 0;
-    animation: none;
+    align-items: start;
+    max-width: 610px;
+  }
+
+  .review-desc {
+    padding-bottom: 0;
   }
 
   /* REVIEWS SECTION END */
 
   /* FOOTER SECTION START */
+
+  .footer-container {
+    background-image: url("../img/graphic-footer-desktop-big.png");
+    background-repeat: repeat;
+    background-size: auto;
+  }
+
+  .footer-section {
+    padding: 70px 0;
+  }
+
+  .footer-content {
+    gap: 50px;
+  }
+
+  .footer-links {
+    min-width: max-content;
+  }
+
+  .all {
+    min-width: 757px;
+    gap: 191px;
+  }
+
+  .footer-section .footer-content .footer-first {
+    gap: 195px;
+  }
+
+  .footer-content div .footer-navbar {
+    gap: 100px;
+  }
+
   /* FOOTER SECTION END */
 }
