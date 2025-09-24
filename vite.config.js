@@ -6,12 +6,15 @@ import SortCss from "postcss-sort-media-queries";
 
 export default defineConfig(({ command }) => {
   return {
-    base: "/goit-rookies-project/", // GitHub Pages için repo adı
-    root: "src", // Kaynak dosyalar src'den
+    base: "/goit-rookies-project/", // Bu satırı koru (GitHub Pages için)
+    define: {
+      [command === "serve" ? "global" : "_global"]: {},
+    },
+    root: "src", // Bu satırı koru, ama input glob'unu düzelt
     build: {
       sourcemap: true,
       rollupOptions: {
-        input: glob.sync("./*.html"), // Sadece src/index.html
+        input: glob.sync("./src/*.html"), // Bu satırı './src/*.html' olarak değiştir (önceki önerim hatalıydı)
         output: {
           manualChunks(id) {
             if (id.includes("node_modules")) {
@@ -28,16 +31,16 @@ export default defineConfig(({ command }) => {
             if (assetInfo.name && assetInfo.name.endsWith(".html")) {
               return "[name].[ext]";
             }
-            return "assets/[name]-[hash][extname]"; // Hashed asset yolları
+            return "assets/[name]-[hash][extname]";
           },
         },
       },
-      outDir: "../dist", // Build çıktısı dist'e
-      emptyOutDir: true, // Eski build dosyalarını sil
+      outDir: "../dist",
+      emptyOutDir: true,
     },
     plugins: [
       injectHTML(),
-      FullReload(["./**/*.html"]), // HTML değişikliklerini izle
+      FullReload(["./src/**/**.html"]),
       SortCss({
         sort: "mobile-first",
       }),
