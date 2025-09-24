@@ -48,7 +48,6 @@ h2 {
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
 }
 
 ul,
@@ -76,6 +75,7 @@ a {
   line-height: 114%;
   letter-spacing: -0.04em;
   color: var(--white);
+  text-transform: capitalize;
 }
 
 .section-title-colored {
@@ -291,6 +291,12 @@ a {
   max-width: 295px;
 }
 
+.hero-header h1 {
+  font-size: 40px;
+  line-height: 110%;
+  letter-spacing: -0.04em;
+}
+
 .highlight {
   color: var(--brown-color);
   font-style: italic;
@@ -300,7 +306,8 @@ a {
 
 .hero-desc {
   font-size: 14px;
-  line-height: 1.28;
+  line-height: 129%;
+  letter-spacing: -0.02em;
   color: var(--white-color);
 }
 
@@ -593,8 +600,8 @@ a {
 }
 
 .our-courses-card svg:hover {
-  fill: var(--brown-color);
-  color: var(--card-p-color);
+  color: var(--white-color);
+  stroke: var(--brown-color);
 }
 
 /* OUR COURSES SECTION END */
@@ -1309,6 +1316,7 @@ a {
     background-repeat: repeat;
     background-size: cover;
     overflow: hidden;
+    max-height: 350px;
   }
 
   .footer-container .footer-line {
@@ -1328,11 +1336,11 @@ a {
   }
 
   .footer-content {
-    row-gap: 75px;
+    row-gap: 70px;
   }
 
-  .footer-top {
-    margin-bottom: 25px;
+  .footer-content .footer-second {
+    gap: 25px;
   }
 
   .footer-contacts {
@@ -1375,8 +1383,14 @@ a {
   }
 
   .footer-links {
+    min-width: 105px;
     flex-direction: column;
     gap: 14px;
+  }
+
+  .footer-link {
+    font-weight: 400;
+    font-size: 14px;
   }
 
   .footer-form {
@@ -1402,7 +1416,6 @@ a {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 50px;
   }
 
   /* FOOTER SECTION END */
@@ -1566,19 +1579,21 @@ a {
     gap: 40px;
   }
 
-  .about-us-text {
+  .about-us-content .about-us-text {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: start;
+    padding: 0;
     gap: 20px;
   }
 
-  .about-us-text p {
+  .about-us-content .about-us-text p {
     font-weight: 400;
     font-size: 16px;
     line-height: 125%;
     letter-spacing: -0.02em;
+    max-width: 268px;
+    max-height: 260px;
   }
   /* ABOUT US SECTION END */
   /* OUR COURSES SECTION START */
@@ -1946,7 +1961,8 @@ a {
     gap: 50px;
   }
 
-  .about-us-text {
+  .about-us-content .about-us-text {
+    padding: 10px 0;
     gap: 40px;
   }
   /* ABOUT US SECTION END */
