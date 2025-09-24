@@ -37,8 +37,8 @@
         <!-- Arrow Diagonal Icon -->
         <symbol id="arrow-diagonal-icon" viewBox="0 0 32 32">
             <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-            <path fill="none" stroke="#777" style="stroke: var(--color5, #777)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3" d="M11 21l10-10"></path>
-            <path fill="none" stroke="#777" style="stroke: var(--color5, #777)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3" d="M14.333 11h6.667v6.667"></path>
+            <path fill="none" stroke="currentColor" style="stroke: var(--color5, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3" d="M11 21l10-10"></path>
+            <path fill="none" stroke="currentColor" style="stroke: var(--color5, currentColor)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3" d="M14.333 11h6.667v6.667"></path>
         </symbol>
 
         <!-- Navbar Icon -->

@@ -589,7 +589,12 @@ a {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  fill: var(--smoke-color);
+  fill: currentColor;
+}
+
+.our-courses-card svg:hover {
+  fill: var(--brown-color);
+  color: var(--card-p-color);
 }
 
 /* OUR COURSES SECTION END */
