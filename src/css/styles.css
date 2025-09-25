@@ -184,7 +184,6 @@ a {
 
 #mobile-menu-toggle:checked .container {
   background-color: #060707;
-  backdrop-filter: var(--black-color);
 }
 
 #mobile-menu-toggle:checked ~ .modal-menu .sidebar-links {
@@ -974,7 +973,7 @@ a {
 
 /* FOOTER SECTION END */
 
-@media (min-resolution: 2px) {
+@media (min-resolution: 2x) {
   .modal-menu img {
     background-image: url("../img/photolens@2x.jpg");
   }
