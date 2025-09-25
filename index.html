@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GoIT Rookies</title>
-    <link rel="stylesheet" crossorigin href="/goit-rookies-project/assets/index-Bted8cXF.css">
+    <link rel="icon" type="image/x-icon" href="/goit-rookies-project/assets/camera-favicon-C9hHrEj-.ico" />
+    <link rel="stylesheet" crossorigin href="/goit-rookies-project/assets/index-O66FTsET.css">
   </head>
   <body>
     <div class="container">
@@ -23,9 +24,11 @@
 
             <div class="nav-right-icons">
               <div class="navbar-camera-icon">
-                <svg>
-                  <use href="/goit-rookies-project/assets/symbol-defs-CgCu6c6t.svg#camera-icon"></use>
-                </svg>
+                <a href="#sign-up">
+                  <svg>
+                    <use href="/goit-rookies-project/assets/symbol-defs-CgCu6c6t.svg#camera-icon"></use>
+                  </svg>
+                </a>
               </div>
 
               <label for="mobile-menu-toggle" class="menu-label">
@@ -71,7 +74,9 @@
           </div>
 
           <div class="navbar-sign-up-button">
-            <button type="submit" class="btn">SIGN UP</button>
+            <a href="#sign-up">
+              <button type="submit" class="btn">SIGN UP</button>
+            </a>
           </div>
         </nav>
       </header>
@@ -125,7 +130,7 @@
                       </li>
                     </ul>
 
-                    <a href="#">
+                    <a href="#reviews">
                       Our happy students
                       <svg>
                         <use
@@ -181,7 +186,7 @@
         </section>
 
         <!-- About Us Bölümü -->
-        <section class="section about-us-section">
+        <section class="section about-us-section" id="about">
           <!-- About Us Başlık -->
           <h2 class="about-us-title section-title">
             About <span class="section-title-colored">Us</span>
@@ -219,7 +224,7 @@
         </section>
 
         <!-- Our Courses Bölümü -->
-        <section class="section our-courses">
+        <section class="section our-courses" id="courses">
           <!-- Our Courses Başlık -->
           <div class="our-courses-header">
             <h2 class="our-courses-title section-title">
@@ -297,7 +302,7 @@
           </ul>
         </section>
 
-        <section class="section our-mentors">
+        <section class="section our-mentors" id="mentors">
           <!-- Our Mentors Başlık -->
           <h2 class="our-mentors-title section-title">
             Our <span class="section-title-colored">Mentors</span>
@@ -352,7 +357,7 @@
           </ul>
         </section>
 
-        <section class="section sign-up-section">
+        <section class="section sign-up-section" id="sign-up">
           <div class="sign-up-content">
             <!-- Sign Up Başlık -->
             <div class="sign-up-title">
@@ -426,7 +431,7 @@
           </div>
         </section>
 
-        <section class="section reviews-section">
+        <section class="section reviews-section" id="reviews">
           <!-- Reviews Başlık -->
           <h2 class="review-title section-title">Reviews</h2>
 
@@ -507,7 +512,7 @@
               </div>
 
               <!-- İrtibat bilgisi -->
-              <address class="footer-contacts">
+              <address class="footer-contacts" id="contacts">
                 <a href="tel:+380665438912" target="_blank">+38 066 543 8912</a>
                 <a
                   href="https://www.google.com/maps/place/Varex+Imaging+Visitor+Entrance/@40.7332053,-111.9591313,17z/data=!3m1!4b1!4m6!3m5!1s0x8752f35bbcfb1369:0x260ab4842496c9e4!8m2!3d40.7332053!4d-111.9591313!16s%2Fg%2F1tcxvqmt?entry=ttu&g_ep=EgoyMDI1MDkxNi4wIKXMDSoASAFQAw%3D%3D"
@@ -549,11 +554,17 @@
                 <!-- Site Bağlantı Listesi -->
                 <div class="footer-list">
                   <ul class="footer-links">
-                    <li class="footer-link"><a href="">ABOUT US</a></li>
-                    <li class="footer-link"><a href="">OUR COURSES</a></li>
-                    <li class="footer-link"><a href="">OUR MENTORS</a></li>
-                    <li class="footer-link"><a href="">REVIEWS</a></li>
-                    <li class="footer-link"><a href="">CONTACTS</a></li>
+                    <li class="footer-link"><a href="#about">ABOUT US</a></li>
+                    <li class="footer-link">
+                      <a href="#courses">OUR COURSES</a>
+                    </li>
+                    <li class="footer-link">
+                      <a href="#mentors">OUR MENTORS</a>
+                    </li>
+                    <li class="footer-link"><a href="#reviews">REVIEWS</a></li>
+                    <li class="footer-link">
+                      <a href="#contacts">CONTACTS</a>
+                    </li>
                   </ul>
                 </div>
               </div>
