@@ -132,6 +132,7 @@ a {
 
 .navbar-camera-icon {
   position: relative;
+  cursor: pointer;
 }
 
 .navbar-camera-icon svg {
@@ -306,9 +307,7 @@ a {
 
 .hero-desc {
   font-size: 14px;
-  line-height: 129%;
-  letter-spacing: -0.02em;
-  color: var(--white-color);
+  line-height: 1.29;
 }
 
 /* İstatistik Şeridi Avatarlar + Reviews */
@@ -439,6 +438,7 @@ a {
 }
 
 .advertisement-section h2 {
+  text-transform: uppercase;
   font-weight: 400;
   color: var(--brown-color);
 }
@@ -670,6 +670,8 @@ a {
 
 /* Deneyim */
 .our-mentor-card-content p {
+  font-size: 14px;
+  line-height: 1.29;
   color: var(--card-p-color);
 }
 
@@ -988,6 +990,11 @@ a {
     max-width: 704px;
   }
 
+  p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   .section-title {
     font-weight: 500;
     font-size: 48px;
@@ -1029,6 +1036,14 @@ a {
   .navbar-sign-up-button {
     display: block;
     min-width: fit-content;
+  }
+
+  .navbar-sign-up-button a {
+    color: var(--black-color);
+  }
+
+  .navbar-sign-up-button:hover a {
+    color: var(--brown-color);
   }
 
   .modal-menu {
@@ -1121,6 +1136,8 @@ a {
     display: flex;
     flex-direction: column;
     align-items: start;
+    font-size: 16px;
+    line-height: 125%;
   }
 
   .hero-student-review {
@@ -1134,10 +1151,17 @@ a {
     gap: 8px;
   }
 
+  .hero-reviews .hero-reviews-desc > p {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
   /* HERO SECTION END */
 
   /* ADVERTISEMENT SECTION START */
   .advertisement > h2 {
+    font-size: 40px;
+    line-height: 1.25;
     padding: 24px 0;
   }
   /* ADVERTISEMENT SECTION END */
@@ -1192,12 +1216,6 @@ a {
     flex-direction: row;
     gap: 8px;
   }
-  .our-courses-header p {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.02em;
-    color: var(--white-color);
-  }
 
   .our-courses-cards {
     display: grid;
@@ -1217,10 +1235,9 @@ a {
     min-height: 324px;
   }
 
-  .our-courses-card-desc {
+  .our-courses-card-content p {
     font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -0.02em;
+    line-height: 1.25;
   }
 
   /* OUR COURSES SECTION END */
@@ -1265,6 +1282,11 @@ a {
 
   .sign-up-form {
     align-items: start;
+  }
+
+  .sign-up-form-policy {
+    font-size: 14px;
+    line-height: 129%;
   }
 
   #sign-up-name,
@@ -1630,16 +1652,6 @@ a {
 
   .our-courses-card {
     min-width: 347px;
-  }
-
-  .our-courses-card-content {
-    padding: 0 32px;
-  }
-
-  .our-courses-card-desc {
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: -2%;
   }
 
   /* OUR COURSES SECTION END */
